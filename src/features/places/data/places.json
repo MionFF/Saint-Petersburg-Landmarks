@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "slug": "hermitage",
+    "name": "The State Hermitage Museum",
+    "category": "museum",
+    "description": "One of the largest and oldest museums in the world.",
+    "address": "Palace Square, 2",
+    "imageUrl": "/images/hermitage.webp",
+    "websiteUrl": "https://www.hermitagemuseum.org/"
+  },
+  {
+    "id": "2",
+    "slug": "crunch-of-the-saivor-on-spilled-blood",
+    "name": "Church of the Savior on Spilled Blood",
+    "category": "cathedral",
+    "description": "Incredible place filled with history, stunning architecture, and a powerful cultural vibe.",
+    "address": "Griboyedovo Kanala Emb., 2B/A",
+    "imageUrl": "/images/crunch-of-the-saivor-on-spilled-blood.webp",
+    "websiteUrl": "https://spas.spb.ru/"
+  }
+]

@@ -1,0 +1,19 @@
+@use 'widgets/Header/Header' as *;
+@use 'widgets/Footer/Footer' as *;
+@use 'features/places/PlaceCard/PlaceCard' as *;
+@use 'features/places/Hero/Hero' as *;
+
+:root {
+  --container-width: 1200px;
+  --space: 16px;
+  --border: #e5e5e5;
+  --muted: #666;
+}
+body {
+  margin: 0;
+  font: 14px/1.5 system-ui, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}

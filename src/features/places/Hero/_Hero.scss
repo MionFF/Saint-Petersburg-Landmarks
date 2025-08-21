@@ -1,0 +1,30 @@
+.hero {
+  position: relative;
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 40px 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/spb-hero.jpg') center/cover no-repeat;
+}
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  //   background: rgba(0, 0, 0, 0.35);
+}
+.hero__content {
+  position: relative;
+  z-index: 1;
+}
+.hero__title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+}
+.hero__subtitle {
+  margin: 8px 0 0;
+  font-size: 18px;
+  opacity: 0.9;
+}

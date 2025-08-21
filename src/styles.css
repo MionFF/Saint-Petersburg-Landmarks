@@ -1,0 +1,102 @@
+.header {
+  padding: var(--space);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  border-bottom: 0;
+  padding: var(--space);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space);
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space);
+}
+
+.place-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.place-card__img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.place-card__body {
+  padding: var(--space);
+}
+
+.place-card__title {
+  margin: 0 0 6px;
+}
+
+.place-card__desc {
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+
+.hero {
+  position: relative;
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 40px 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/spb-hero.jpg") center/cover no-repeat;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.hero__subtitle {
+  margin: 8px 0 0;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+:root {
+  --container-width: 1200px;
+  --space: 16px;
+  --border: #e5e5e5;
+  --muted: #666;
+}
+
+body {
+  margin: 0;
+  font: 14px/1.5 system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
