@@ -1,10 +1,12 @@
-import type { Place } from './types'
+import type { Place } from '../types'
 
 export default function PlaceCard({ place }: { place: Place }) {
   return (
     <article className='place-card'>
       {place.imageUrl && (
-        <img src={place.imageUrl} alt={place.name} className='place-card__img' loading='lazy' />
+        <div className='place-card__media'>
+          <img src={place.imageUrl} alt={place.name} className='place-card__img' loading='lazy' />
+        </div>
       )}
       <div className='place-card__body'>
         <h3 className='place-card__title'>{place.name}</h3>

@@ -1,4 +1,15 @@
-export type Category = 'theatre' | 'museum' | 'park' | 'monument' | 'cathedral'
+export type Category =
+  | 'theatre'
+  | 'museum'
+  | 'cathedral'
+  | 'park'
+  | 'monument'
+  | 'palace'
+  | 'street'
+  | 'fortress'
+  | 'square'
+  | 'ensemble'
+  | 'skyscraper'
 
 export type Place = {
   id?: string

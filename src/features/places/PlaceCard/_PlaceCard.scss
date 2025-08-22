@@ -13,19 +13,41 @@
   border-radius: 8px;
   overflow: hidden;
 }
+.place-card__media {
+  width: 100%;
+  max-width: 958px; /* опционально, если хочешь строго */
+  aspect-ratio: 958 / 388; /* фиксируем пропорции */
+  overflow: hidden;
+  border-radius: 8px;
+}
 .place-card__img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* обрезаем лишнее, без искажений */
   display: block;
 }
 .place-card__body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 8px;
   padding: var(--space);
 }
 .place-card__title {
   margin: 0 0 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .place-card__desc {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   margin: 0 0 8px;
   color: var(--muted);
+}
+.place-card__actions {
+  margin-top: 4px;
 }
