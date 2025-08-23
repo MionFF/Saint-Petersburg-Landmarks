@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
 import HomePage from '../pages/home/HomePage'
 import RootLayout from './layouts/RootLayout/RootLayout'
-import PlacesListPage from '../pages/places/PlacesListPage'
+import PlacesPage from '../pages/places/PlacesPage'
 import PlaceDetailsPage from '../pages/places/PlaceDetailsPage'
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
         <Route path='/' element={<RootLayout />}>
           <Route index element={<HomePage />} />
           <Route path='places' />
-          <Route index element={<PlacesListPage />} />
+          <Route index element={<PlacesPage />} />
           <Route path=':slug' element={<PlaceDetailsPage />} />
         </Route>
         <Route path='*' element={<div>404 Not Found</div>} />

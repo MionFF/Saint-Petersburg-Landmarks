@@ -1,7 +1,8 @@
 @use 'widgets/Header/Header' as *;
 @use 'widgets/Footer/Footer' as *;
-@use 'features/places/PlaceCard/PlaceCard' as *;
+@use 'features/places/components/PlaceCard/PlaceCard' as *;
 @use 'features/places/Hero/Hero' as *;
+@use 'features/places/components/SideAnchors/SideAnchors' as *;
 
 :root {
   --container-width: 1200px;
@@ -16,4 +17,14 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space);
+}
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space);
 }
