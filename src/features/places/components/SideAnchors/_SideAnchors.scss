@@ -1,13 +1,3 @@
-.container-grid {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 16px;
-}
-@media (max-width: 1024px) {
-  .container-grid {
-    grid-template-columns: 1fr;
-  }
-}
 .side-anchors {
   position: sticky;
   top: 16px;
@@ -24,8 +14,39 @@
   padding: 4px 8px;
   border-radius: 6px;
   color: var(--muted);
+
+  &:hover {
+    background: #f4f4f4;
+    color: inherit;
+  }
+
+  &:active {
+    color: #000;
+    background: #f2f2f2;
+  }
 }
-.side-anchors a.active {
-  color: #000;
-  background: #f2f2f2;
+
+/* Видимость версий сайдбара */
+.side-anchors--grid {
+  display: block;
+}
+.side-anchors--mobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  /* Мобильная панель */
+  .side-anchors--mobile {
+    display: block; /* показываем мобильную */
+    position: static;
+    top: auto;
+    max-height: 50vh;
+    overflow: auto;
+    margin-bottom: 12px;
+  }
+
+  /* Прячем гридовый сайдбар в мобильной колонке */
+  .side-anchors--grid {
+    display: none;
+  }
 }

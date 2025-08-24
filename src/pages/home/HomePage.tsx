@@ -12,7 +12,7 @@ export default function HomePage() {
         <ul className='places-grid' style={{ listStyle: 'none', margin: 0, padding: 0 }}>
           {places.map(place => (
             <li key={place.id} id={place.slug}>
-              <PlaceCard place={place} variant='grid' />
+              <PlaceCard place={place} />
             </li>
           ))}
         </ul>

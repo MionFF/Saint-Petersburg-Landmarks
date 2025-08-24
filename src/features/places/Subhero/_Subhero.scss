@@ -1,42 +1,42 @@
-.hero {
+.subhero {
   position: relative;
   margin-bottom: 36px;
-  min-height: 280px;
+  min-height: 240px;
   display: grid;
   place-items: center;
   color: #fff;
   text-align: center;
   padding: 40px 16px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/images/spb-hero.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)),
+    url('/images/spb-subhero.jpg') center/cover no-repeat;
 }
-.hero__overlay {
+.subhero__overlay {
   position: absolute;
   inset: 0;
   //   background: rgba(0, 0, 0, 0.35);
 }
-.hero__content {
+.subhero__content {
   position: relative;
   z-index: 1;
 }
-.hero__title {
+.subhero__title {
   margin: 0;
   font-size: 32px;
   line-height: 1.2;
 }
-.hero__subtitle {
+.subhero__subtitle {
   margin: 8px 0 0;
   font-size: 18px;
   opacity: 0.9;
 }
 
 @media (max-width: 1024px) {
-  .hero__title {
+  .subhero__title {
     margin: 0;
     font-size: 24px;
     line-height: 1.2;
   }
-  .hero__subtitle {
+  .subhero__subtitle {
     margin: 8px 0 0;
     font-size: 14px;
     opacity: 0.9;

@@ -1,21 +1,37 @@
+// Типографика и метрики
+$card-title-fs: 18px;
+$card-title-lh: 1.25; // 22.5px
+$card-desc-fs: 14px;
+$card-desc-lh: 1.45; // 20.3px
+// $grid-aspect-ratio: 16 / 11; // Странная ошибка в терминале: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
 .place-card {
   border: 1px solid var(--border);
   border-radius: 8px;
-  cursor: pointer;
   overflow: hidden;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer; // по умолчанию — grid
 
   &:hover {
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     transform: translateY(-2px);
   }
+
+  &:focus-within {
+    outline: 2px solid transparent;
+  }
+  &:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+  }
 }
 
 .place-card__media {
   width: 100%;
-  aspect-ratio: 958 / 388;
+  aspect-ratio: 16 / 11; // 16/11 — ровные превью в сетке
   overflow: hidden;
 }
+
 .place-card__img {
   width: 100%;
   height: 100%;
@@ -28,14 +44,14 @@
   grid-template-rows: auto 1fr auto;
   gap: 8px;
   padding: var(--space);
-  min-height: 160px; /* подобрать по макету; делает «корпус» одинаковым */
+  min-height: 160px; // стабилизирует корпус
 }
 
 .place-card__title {
   margin: 0 0 6px;
-  font-size: 18px;
-  line-height: 1.25; /* 22.5px на строку при 18px */
-  height: calc(1.25em * 2); /* ровно 2 строки высоты */
+  font-size: $card-title-fs;
+  line-height: $card-title-lh;
+  height: calc(#{$card-title-lh} * 1em * 2); // ровно 2 строки
   display: -webkit-box;
   line-clamp: 2;
   -webkit-line-clamp: 2;
@@ -48,9 +64,9 @@
 .place-card__desc {
   margin: 0 0 8px;
   color: var(--muted);
-  font-size: 14px;
-  line-height: 1.45; /* 20.3px на строку при 14px */
-  height: calc(1.45em * 3); /* ровно 3 строки высоты */
+  font-size: $card-desc-fs;
+  line-height: $card-desc-lh;
+  height: calc(#{$card-desc-lh} * 1em * 3); // ровно 3 строки
   display: -webkit-box;
   line-clamp: 3;
   -webkit-line-clamp: 3;
@@ -58,8 +74,16 @@
   overflow: hidden;
 }
 
-/* Конкретика для варианта wide — только если реально есть отличия */
-.place-card--wide .place-card__desc {
-  line-clamp: 6;
-  -webkit-line-clamp: 6;
+.place-card__meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.place-card__actions {
+  margin-top: 4px;
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
 }

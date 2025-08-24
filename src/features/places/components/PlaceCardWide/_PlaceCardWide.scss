@@ -1,0 +1,65 @@
+// Можно переиспользовать те же переменные, если подключены глобально
+$wide-desc-lines: 6;
+
+@mixin btn-reset() {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f7f7f7;
+  }
+}
+
+.place-card.place-card--wide {
+  // В wide карточка — не кликабельная целиком
+  cursor: initial;
+
+  // Можно смягчить hover
+  &:hover {
+    box-shadow: none;
+    transform: none;
+  }
+
+  // Медиа-режим: минимум обрезки, ставка на качество
+  .place-card__media {
+    aspect-ratio: auto; // снимаем фикс, кадр не урезаем жёстко
+    max-height: 550px; // ограничиваем высоту блока
+    overflow: hidden;
+  }
+
+  .place-card__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; // сохраняем композицию; если нужно – поменять на cover
+    display: block;
+    background: #f7f7f7; // лёгкий фон, если будут "письма" по бокам
+  }
+
+  // Тело можно сделать «воздушнее»
+  .place-card__body {
+    padding: calc(var(--space) * 1.25);
+    row-gap: 10px;
+  }
+
+  // Описание шире раскрываем
+  .place-card__desc {
+    // увеличиваем видимую длину
+    height: auto; // снимаем фикс, если хочешь дать «больше воздуха» в wide
+    line-clamp: $wide-desc-lines;
+    -webkit-line-clamp: $wide-desc-lines;
+  }
+
+  .place-card__actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    .btn-more {
+      @include btn-reset();
+    }
+  }
+}
