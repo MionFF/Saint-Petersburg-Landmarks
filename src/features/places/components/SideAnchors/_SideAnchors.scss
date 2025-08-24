@@ -14,12 +14,39 @@
   padding: 4px 8px;
   border-radius: 6px;
   color: var(--muted);
+
+  &:hover {
+    background: #f4f4f4;
+    color: inherit;
+  }
+
+  &:active {
+    color: #000;
+    background: #f2f2f2;
+  }
 }
-.side-anchors a:hover {
-  background: #f4f4f4;
-  color: inherit;
+
+/* Видимость версий сайдбара */
+.side-anchors--grid {
+  display: block;
 }
-.side-anchors a.active {
-  color: #000;
-  background: #f2f2f2;
+.side-anchors--mobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  /* Мобильная панель */
+  .side-anchors--mobile {
+    display: block; /* показываем мобильную */
+    position: static;
+    top: auto;
+    max-height: 50vh;
+    overflow: auto;
+    margin-bottom: 12px;
+  }
+
+  /* Прячем гридовый сайдбар в мобильной колонке */
+  .side-anchors--grid {
+    display: none;
+  }
 }

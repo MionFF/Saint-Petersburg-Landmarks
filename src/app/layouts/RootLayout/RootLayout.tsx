@@ -2,6 +2,7 @@ import { NavLink, Outlet } from 'react-router'
 import '../../../styles.scss'
 import Header from '../../../widgets/Header/Header'
 import Footer from '../../../widgets/Footer/Footer'
+import ScrollTopButton from '../../../features/places/ScrollTopButton/ScrollTopButton'
 
 export default function RootLayout() {
   return (
@@ -15,6 +16,7 @@ export default function RootLayout() {
         <Outlet />
       </main>
       <Footer>&copy; Saint-Petersburg</Footer>
+      <ScrollTopButton threshold={300} />
     </>
   )
 }

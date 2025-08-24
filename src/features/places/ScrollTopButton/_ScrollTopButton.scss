@@ -1,0 +1,69 @@
+.scroll-top {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #111;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transform: translateX(-50%) scale(0.98);
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateX(-50%) translateY(-2px);
+  }
+
+  &.scroll-top--visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+  }
+
+  &--visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @media (min-width: 1024px) {
+    bottom: 24px;
+  }
+}
+
+/* Адаптив: уменьшение кнопки на мобильных устройствах */
+@media (max-width: 480px) {
+  .scroll-top {
+    width: 38px;
+    height: 38px;
+    bottom: 14px; /* чуть ближе к нижнему краю */
+  }
+  .scroll-top svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* планшеты */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .scroll-top {
+    width: 42px;
+    height: 42px;
+    bottom: 18px;
+  }
+  .scroll-top svg {
+    width: 17px;
+    height: 17px;
+  }
+}

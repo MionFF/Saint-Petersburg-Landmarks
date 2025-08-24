@@ -2,12 +2,11 @@ import type { Place } from '../../types'
 
 type Props = {
   place: Place
-  variant?: 'grid' | 'wide'
 }
 
-export default function PlaceCard({ place, variant = 'grid' }: Props) {
+export default function PlaceCard({ place }: Props) {
   return (
-    <article className={`place-card place-card--${variant}`}>
+    <article className={`place-card place-card--grid`}>
       {place.imageUrl && (
         <div className='place-card__media'>
           <img src={place.imageUrl} alt={place.name} className='place-card__img' loading='lazy' />
@@ -21,15 +20,6 @@ export default function PlaceCard({ place, variant = 'grid' }: Props) {
         <div className='place-card__meta'>
           <span>{place.category}</span> · <span>{place.address}</span>
         </div>
-
-        {/* The link to the official site will be available in "more..." */}
-        {place.websiteUrl && variant === 'wide' && (
-          <div className='place-card__actions'>
-            <a href={place.websiteUrl} target='_blank' rel='noopener noreferrer'>
-              Official site
-            </a>
-          </div>
-        )}
       </div>
     </article>
   )
