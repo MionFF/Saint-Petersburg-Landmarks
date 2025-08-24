@@ -58,8 +58,23 @@
   overflow: hidden;
 }
 
+.place-card--wide {
+  cursor: initial;
+}
 /* Конкретика для варианта wide — только если реально есть отличия */
 .place-card--wide .place-card__desc {
   line-clamp: 6;
   -webkit-line-clamp: 6;
+}
+/* Вариант без жесткого кадрирования (меньше обрезки, лучше качество): */
+.place-card--wide .place-card__media {
+  aspect-ratio: auto; /* снимаем фикс */
+  max-height: 550px; /* ограничиваем по высоте */
+  overflow: hidden;
+}
+.place-card--wide .place-card__img {
+  width: 100%;
+  height: auto; /* без обрезки */
+  object-fit: contain; /* либо 'cover' — выбери, что визуально лучше по данным */
+  display: block;
 }

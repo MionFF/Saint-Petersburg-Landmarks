@@ -23,6 +23,25 @@ a {
   margin: 0 auto;
   padding: 0 var(--space);
 }
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 16px;
+}
+.places-stack {
+  order: 1;
+}
+.side-anchors {
+  order: 2;
+}
+@media (max-width: 1024px) {
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.places-stack > article:not(:last-child) {
+  margin-bottom: 24px;
+}
 .places-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

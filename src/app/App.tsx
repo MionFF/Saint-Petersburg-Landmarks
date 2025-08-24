@@ -10,8 +10,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<RootLayout />}>
           <Route index element={<HomePage />} />
-          <Route path='places' />
-          <Route index element={<PlacesPage />} />
+          <Route path='places' element={<PlacesPage />} />
           <Route path=':slug' element={<PlaceDetailsPage />} />
         </Route>
         <Route path='*' element={<div>404 Not Found</div>} />

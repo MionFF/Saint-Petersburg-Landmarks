@@ -23,13 +23,13 @@ export default function PlaceCard({ place, variant = 'grid' }: Props) {
         </div>
 
         {/* The link to the official site will be available in "more..." */}
-        {/* {place.websiteUrl && (
+        {place.websiteUrl && variant === 'wide' && (
           <div className='place-card__actions'>
             <a href={place.websiteUrl} target='_blank' rel='noopener noreferrer'>
               Official site
             </a>
           </div>
-        )} */}
+        )}
       </div>
     </article>
   )

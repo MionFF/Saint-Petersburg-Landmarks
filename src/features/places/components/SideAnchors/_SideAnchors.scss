@@ -1,13 +1,3 @@
-.container-grid {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 16px;
-}
-@media (max-width: 1024px) {
-  .container-grid {
-    grid-template-columns: 1fr;
-  }
-}
 .side-anchors {
   position: sticky;
   top: 16px;
@@ -24,6 +14,10 @@
   padding: 4px 8px;
   border-radius: 6px;
   color: var(--muted);
+}
+.side-anchors a:hover {
+  background: #f4f4f4;
+  color: inherit;
 }
 .side-anchors a.active {
   color: #000;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   padding: var(--space);
   border-bottom: 1px solid var(--border);
@@ -12,43 +13,91 @@
   text-align: center;
 }
 
-.container {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 0 var(--space);
-}
-
-.places-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: var(--space);
-}
-
 .place-card {
   border: 1px solid var(--border);
   border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.place-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.place-card__media {
+  width: 100%;
+  aspect-ratio: 958/388;
   overflow: hidden;
 }
 
 .place-card__img {
   width: 100%;
-  height: 180px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
 }
 
 .place-card__body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 8px;
   padding: var(--space);
+  min-height: 160px; /* подобрать по макету; делает «корпус» одинаковым */
 }
 
 .place-card__title {
   margin: 0 0 6px;
+  font-size: 18px;
+  line-height: 1.25; /* 22.5px на строку при 18px */
+  height: 2.5em; /* ровно 2 строки высоты */
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 .place-card__desc {
   margin: 0 0 8px;
   color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45; /* 20.3px на строку при 14px */
+  height: 4.35em; /* ровно 3 строки высоты */
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.place-card--wide {
+  cursor: initial;
+}
+
+/* Конкретика для варианта wide — только если реально есть отличия */
+.place-card--wide .place-card__desc {
+  line-clamp: 6;
+  -webkit-line-clamp: 6;
+}
+
+/* Вариант без жесткого кадрирования (меньше обрезки, лучше качество): */
+.place-card--wide .place-card__media {
+  aspect-ratio: auto; /* снимаем фикс */
+  max-height: 550px; /* ограничиваем по высоте */
+  overflow: hidden;
+}
+
+.place-card--wide .place-card__img {
+  width: 100%;
+  height: auto; /* без обрезки */
+  -o-object-fit: contain;
+     object-fit: contain; /* либо 'cover' — выбери, что визуально лучше по данным */
+  display: block;
 }
 
 .hero {
@@ -84,6 +133,35 @@
   opacity: 0.9;
 }
 
+.side-anchors {
+  position: sticky;
+  top: 16px;
+  align-self: start;
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.side-anchors a {
+  display: block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: var(--muted);
+}
+
+.side-anchors a:hover {
+  background: #f4f4f4;
+  color: inherit;
+}
+
+.side-anchors a.active {
+  color: #000;
+  background: #f2f2f2;
+}
+
 :root {
   --container-width: 1200px;
   --space: 16px;
@@ -99,4 +177,39 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space);
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 16px;
+}
+
+.places-stack {
+  order: 1;
+}
+
+.side-anchors {
+  order: 2;
+}
+
+@media (max-width: 1024px) {
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.places-stack > article:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space);
 }/*# sourceMappingURL=styles.css.map */
