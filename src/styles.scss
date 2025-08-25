@@ -79,8 +79,44 @@ a {
 .places-stack > article[id] {
   scroll-margin-top: 80px;
 }
+/* Mobile-first, без auto-fill */
 .places-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--space);
+  grid-template-columns: repeat(2, 1fr); /* базово: 2 колонки на телефонах */
+}
+
+/* Очень узкие экраны — если надо строго 2, оставь как есть;
+если совсем ломается — временно 1 колонка на <340px */
+@media (max-width: 340px) {
+  .places-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .place-card__body {
+    padding: 12px; /* было var(--space) = 16px */
+  }
+}
+
+/* Планшеты маленькие */
+@media (min-width: 600px) and (max-width: 809px) {
+  .places-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Планшеты большие/малые ноуты */
+@media (min-width: 810px) and (max-width: 1199px) {
+  .places-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Десктоп */
+@media (min-width: 1200px) {
+  .places-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

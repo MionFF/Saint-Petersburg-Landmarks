@@ -1,9 +1,11 @@
 // Типографика и метрики
+@use 'sass:math';
+
 $card-title-fs: 18px;
 $card-title-lh: 1.25; // 22.5px
 $card-desc-fs: 14px;
 $card-desc-lh: 1.45; // 20.3px
-// $grid-aspect-ratio: 16 / 11; // Странная ошибка в терминале: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+$grid-aspect-ratio: math.div(16, 11);
 
 .place-card {
   border: 1px solid var(--border);
@@ -28,7 +30,7 @@ $card-desc-lh: 1.45; // 20.3px
 
 .place-card__media {
   width: 100%;
-  aspect-ratio: 16 / 11; // 16/11 — ровные превью в сетке
+  aspect-ratio: $grid-aspect-ratio; // 16/11 — ровные превью в сетке
   overflow: hidden;
 }
 
@@ -76,7 +78,17 @@ $card-desc-lh: 1.45; // 20.3px
 
 .place-card__meta {
   font-size: 13px;
+  line-height: 1.35;
   color: var(--muted);
+
+  word-break: break-word;
+  hyphens: auto;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .place-card__actions {
@@ -85,5 +97,20 @@ $card-desc-lh: 1.45; // 20.3px
     color: inherit;
     text-decoration: underline;
     text-underline-offset: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .place-card__desc {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    height: calc(#{$card-desc-lh} * 1em * 2);
+  }
+  .place-card__meta {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    height: calc(1.35em * 2);
+
+    height: calc(1.35em * 2); // Не должно быть базовым правилом
   }
 }
