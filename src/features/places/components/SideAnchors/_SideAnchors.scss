@@ -14,16 +14,24 @@
   padding: 4px 8px;
   border-radius: 6px;
   color: var(--muted);
+  border: 1px solid transparent;
 
   &:hover {
     background: #f4f4f4;
     color: inherit;
   }
 
+  /* не перебиваем .active жирностью */
   &:active {
-    color: #000;
-    background: #f2f2f2;
+    background: #f0f0f0;
   }
+}
+
+.side-anchors a.active {
+  background: #eaeaea;
+  color: #000;
+  font-weight: 600;
+  border-color: #ddd;
 }
 
 /* Видимость версий сайдбара */
