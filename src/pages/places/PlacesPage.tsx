@@ -22,8 +22,9 @@ export default function PlacesPage() {
   return (
     <>
       <Subhero />
+
       {/* Мобильная кнопка + мобильная панель (вне grid) */}
-      <div className='container'>
+      <div id='anchors-panel' className='container'>
         <button
           className='anchors-toggle'
           type='button'
@@ -32,6 +33,7 @@ export default function PlacesPage() {
         >
           {isOpen ? 'Hide' : 'Browse places'}
         </button>
+
         {isOpen && (
           <SideAnchors
             items={places}

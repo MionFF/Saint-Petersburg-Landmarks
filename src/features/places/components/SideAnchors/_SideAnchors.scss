@@ -1,8 +1,8 @@
 .side-anchors {
   position: sticky;
-  top: 16px;
+  top: calc(var(--header-h) + 14px);
   align-self: start;
-  max-height: calc(100vh - 32px);
+  max-height: calc(100vh - var(--header-h) - 16px);
   overflow: auto;
   padding: 8px;
   border: 1px solid var(--border);
@@ -56,5 +56,23 @@
   /* Прячем гридовый сайдбар в мобильной колонке */
   .side-anchors--grid {
     display: none;
+  }
+}
+
+/* Кнопка anchors-toggle — только мобайл (если ещё не добавлена) */
+.anchors-toggle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .anchors-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    margin: 12px 0;
   }
 }
