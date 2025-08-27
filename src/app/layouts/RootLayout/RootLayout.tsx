@@ -34,11 +34,9 @@ export default function RootLayout() {
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/places'>Places</NavLink>
       </Header>
-
       <main className='container'>
         <Outlet />
       </main>
-
       <Footer>&copy; Saint-Petersburg</Footer>
       <ScrollTopButton threshold={300} />
     </>

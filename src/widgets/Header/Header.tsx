@@ -10,18 +10,27 @@ export default function Header({ children, onBrowse, showBrowse }: Props) {
   return (
     <header className='header'>
       <nav className='nav'>
-        <div className='nav__links'>{children}</div>
-        <div className='nav__spacer' />
-        {showBrowse && (
-          <button
-            type='button'
-            className='nav__browse'
-            aria-label='Browse places'
-            onClick={onBrowse}
-          >
-            Browse Places
-          </button>
-        )}
+        {/* Лого слева */}
+        <div className='nav__brand'>
+          <a href='/' aria-label='Home'>
+            SPB Guide
+          </a>
+        </div>
+
+        {/* Навигация справа */}
+        <div className='nav__links'>
+          {children}
+          {showBrowse && (
+            <button
+              type='button'
+              className='nav__browse'
+              aria-label='Browse places'
+              onClick={onBrowse}
+            >
+              Browse Places
+            </button>
+          )}
+        </div>
       </nav>
     </header>
   )
