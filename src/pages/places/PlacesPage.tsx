@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useMemo } from 'react'
 import { getPlaces } from '../../features/places/helpers'
 import PlaceCardWide from '../../features/places/components/PlaceCardWide/PlaceCardWide'
 import SideAnchors from '../../features/places/components/SideAnchors/SideAnchors'
@@ -7,7 +7,6 @@ import { useActiveSlug } from '../../features/places/hooks/useActiveSlug'
 
 export default function PlacesPage() {
   const places = getPlaces()
-  const [isOpen, setIsOpen] = useState(true)
 
   const ids = useMemo(
     () => places.map(p => p.slug).filter((s): s is string => Boolean(s)),
@@ -15,16 +14,12 @@ export default function PlacesPage() {
   )
   const activeSlug = useActiveSlug(ids, '0px 0px -50% 0px', 0.5)
 
-  function toggleOpen() {
-    setIsOpen(prev => !prev)
-  }
-
   return (
     <>
       <Subhero />
 
       {/* Мобильная кнопка + мобильная панель (вне grid) */}
-      <div id='anchors-panel' className='container'>
+      {/* <div id='anchors-panel' className='container'>
         <button
           className='anchors-toggle'
           type='button'
@@ -42,7 +37,7 @@ export default function PlacesPage() {
             activeSlug={activeSlug}
           />
         )}
-      </div>
+      </div> */}
 
       {/* Десктопный layout с сайдбаром справа */}
       <section className='container' style={{ padding: '24px 0' }}>

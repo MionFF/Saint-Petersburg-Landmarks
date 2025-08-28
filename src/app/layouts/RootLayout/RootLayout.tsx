@@ -1,31 +1,39 @@
+import { useState, useMemo } from 'react'
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router'
 import '../../../styles.scss'
 import Header from '../../../widgets/Header/Header'
 import Footer from '../../../widgets/Footer/Footer'
 import ScrollTopButton from '../../../features/places/ScrollTopButton/ScrollTopButton'
+import AnchorsDrawer from '../../../features/places/components/AnchorsDrawer/AnchorsDrawer'
+import SideAnchors from '../../../features/places/components/SideAnchors/SideAnchors'
+import { getPlaces } from '../../../features/places/helpers'
+import { useActiveSlug } from '../../../features/places/hooks/useActiveSlug'
 
 export default function RootLayout() {
   const nav = useNavigate()
   const { pathname } = useLocation()
   const isPlaces = pathname.startsWith('/places')
 
-  // const [drawerOpen, setDrawerOpen] = useState(false)
-  // const places = useMemo(() => getPlaces(), [])
+  const [open, setOpen] = useState(false)
+  const places = useMemo(() => getPlaces(), [])
+
+  // ids только из places.slug
+  const ids = useMemo(
+    () => places.map(p => p.slug).filter((s): s is string => Boolean(s)),
+    [places],
+  )
+
+  // Включаем IO-трекинг только на /places
+  const activeSlug = useActiveSlug(ids, '0px 0px -50% 0px', 0.5)
 
   function handleBrowse() {
     if (!isPlaces) {
-      nav('/places#anchors-panel')
+      nav('/places')
+      // откроем после перехода небольшим таймаутом (когда DOM загрузит страницу)
+      setTimeout(() => setOpen(true), 0)
       return
     }
-    const target = document.getElementById('anchors-panel')
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' })
-    }
-    // если мобильная панель закрыта — раскрыть
-    const mobilePanel = document.querySelector('.side-anchors--mobile')
-    if (!mobilePanel) {
-      document.querySelector<HTMLButtonElement>('.anchors-toggle')?.click()
-    }
+    setOpen(true)
   }
 
   return (
@@ -34,11 +42,22 @@ export default function RootLayout() {
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/places'>Places</NavLink>
       </Header>
+
       <main className='container'>
         <Outlet />
       </main>
+
       <Footer>&copy; Saint-Petersburg</Footer>
       <ScrollTopButton threshold={300} />
+
+      <AnchorsDrawer open={open} onClose={() => setOpen(false)} side='bottom' title='Browse Places'>
+        <SideAnchors
+          items={places}
+          className='side-anchors--mobile'
+          onItemClick={() => setOpen(false)}
+          activeSlug={activeSlug}
+        />
+      </AnchorsDrawer>
     </>
   )
 }

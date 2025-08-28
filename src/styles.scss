@@ -6,6 +6,7 @@
 @use 'features/places/Subhero/Subhero' as *;
 @use 'features/places/ScrollTopButton/ScrollTopButton' as *;
 @use 'features/places/components/SideAnchors/SideAnchors' as *;
+@use 'features/places/components/AnchorsDrawer/AnchorsDrawer' as *;
 
 :root {
   --container-width: 1200px;

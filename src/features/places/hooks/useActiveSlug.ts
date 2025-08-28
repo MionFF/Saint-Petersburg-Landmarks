@@ -1,9 +1,15 @@
 import { useEffect, useState } from 'react'
 
-export function useActiveSlug(ids: string[], rootMargin = '0px 0px -60% 0px', threshold = 0.1) {
+export function useActiveSlug(
+  ids: string[],
+  rootMargin = '0px 0px -50% 0px',
+  threshold = 0.5,
+  enable = true,
+) {
   const [active, setActive] = useState<string | null>(null)
 
   useEffect(() => {
+    if (!enable) return
     if (!ids.length) return
 
     const elements = ids.map(id => document.getElementById(id)).filter(Boolean) as HTMLElement[]
@@ -37,6 +43,12 @@ export function useActiveSlug(ids: string[], rootMargin = '0px 0px -60% 0px', th
     elements.forEach(el => io.observe(el))
     return () => io.disconnect()
   }, [ids, rootMargin, threshold])
+
+  useEffect(() => {
+    if (!enable && active !== null) {
+      setActive(null)
+    }
+  }, [enable])
 
   return active
 }

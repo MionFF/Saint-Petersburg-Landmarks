@@ -1,0 +1,126 @@
+/* шапка поверх бекдропа, но без кликов при открытом дровере */
+.is-drawer-open .header {
+  z-index: 1150; /* выше бекдропа, ниже панели */
+  pointer-events: none; /* клики уходят в модалку/бекдроп */
+  filter: saturate(80%) brightness(0.9); /* мягко притушить */
+  backdrop-filter: saturate(120%) blur(1px); /* лёгкий блюр поверх фона */
+  transition: filter 0.18s ease, backdrop-filter 0.18s ease;
+} /* видна, но не активна */ /* [2][5] */
+
+/* Backdrop */
+.ad-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease;
+  z-index: 1100;
+}
+.ad-backdrop--open {
+  opacity: 1;
+  pointer-events: auto;
+} /* [1] */
+
+/* Panel base */
+.ad-panel {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
+  z-index: 1200;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  will-change: transform;
+  transition: transform 0.22s ease;
+} /* [1] */
+
+/* Bottom sheet */
+.ad-panel--bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: min(720px, 100%);
+  max-height: 80vh;
+  border-radius: 12px 12px 0 0;
+  transform: translateY(100%);
+}
+.ad-panel--bottom.ad-panel--open {
+  transform: translateY(0);
+}
+.ad-panel--bottom.ad-panel--close {
+  transform: translateY(100%);
+} /* [1] */
+
+/* Right drawer */
+.ad-panel--right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(420px, 100%);
+  max-height: 100vh;
+  border-radius: 12px 0 0 12px;
+  transform: translateX(100%);
+}
+.ad-panel--right.ad-panel--open {
+  transform: translateX(0);
+}
+.ad-panel--right.ad-panel--close {
+  transform: translateX(100%);
+} /* [1] */
+
+.ad-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px 8px;
+  border-bottom: 1px solid var(--border);
+}
+.ad-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ad-close {
+  appearance: none;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.ad-content {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px;
+  max-height: 100%;
+} /* [3][6] */
+
+/* Ручка/хедер как зона жеста */
+.ad-header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px 8px;
+  border-bottom: 1px solid var(--border);
+  touch-action: none; /* позволяем свайп на ручке */
+}
+
+/* Маленькая полоска-указатель жеста (необязательно) */
+.ad-header::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  width: 40px;
+  height: 4px;
+  margin-left: -20px;
+  border-radius: 999px;
+  background: #ddd;
+}
