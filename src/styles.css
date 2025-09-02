@@ -1,10 +1,85 @@
 @charset "UTF-8";
 .header {
-  padding: var(--space);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f8f8f8;
   border-bottom: 1px solid var(--border);
-  text-align: center;
+  padding: 0 var(--space);
+  height: var(--header-h);
+  display: grid;
+  align-items: center;
+  /* для iOS safe area */
+  padding-top: max(0px, env(safe-area-inset-top));
 }
 
+.nav {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--header-h);
+  gap: 12px;
+}
+
+.nav__brand a {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: inherit;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.nav__links a.active {
+  background: #eee;
+}
+
+/* Кнопка Browse — по умолчанию скрыта (десктоп) */
+.nav__browse {
+  display: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.nav__browse:hover {
+  background: #f2f2f2;
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+  .nav {
+    grid-template-columns: auto 1fr auto;
+    gap: 8px;
+  }
+  .nav__links {
+    gap: 8px;
+  }
+  .nav__browse {
+    display: inline-flex;
+  }
+}
 .footer {
   border-top: 1px solid var(--border);
   border-bottom: 0;
@@ -34,7 +109,7 @@
 
 .place-card__media {
   width: 100%;
-  aspect-ratio: 16/11;
+  aspect-ratio: 1.4545454545;
   overflow: hidden;
 }
 
@@ -84,7 +159,16 @@
 
 .place-card__meta {
   font-size: 13px;
+  line-height: 1.35;
   color: var(--muted);
+  word-break: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .place-card__actions {
@@ -96,6 +180,19 @@
   text-underline-offset: 2px;
 }
 
+@media (max-width: 480px) {
+  .place-card__desc {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    height: calc(1.45 * 1em * 2);
+  }
+  .place-card__meta {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    height: 2.7em;
+    height: 2.7em;
+  }
+}
 .place-card.place-card--wide {
   cursor: initial;
 }
@@ -299,11 +396,15 @@
     height: 17px;
   }
 }
+.no-smooth {
+  scroll-behavior: auto !important;
+}
+
 .side-anchors {
   position: sticky;
-  top: 16px;
+  top: calc(var(--header-h) + 14px);
   align-self: start;
-  max-height: calc(100vh - 32px);
+  max-height: calc(100vh - var(--header-h) - 16px);
   overflow: auto;
   padding: 8px;
   border: 1px solid var(--border);
@@ -316,14 +417,22 @@
   padding: 4px 8px;
   border-radius: 6px;
   color: var(--muted);
+  border: 1px solid transparent;
+  /* не перебиваем .active жирностью */
 }
 .side-anchors a:hover {
   background: #f4f4f4;
   color: inherit;
 }
 .side-anchors a:active {
+  background: #f0f0f0;
+}
+
+.side-anchors a.active {
+  background: #eaeaea;
   color: #000;
-  background: #f2f2f2;
+  font-weight: 600;
+  border-color: #ddd;
 }
 
 /* Видимость версий сайдбара */
@@ -350,11 +459,169 @@
     display: none;
   }
 }
+/* Кнопка anchors-toggle — только мобайл (если ещё не добавлена) */
+.anchors-toggle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .anchors-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    margin: 12px 0;
+  }
+}
+/* шапка поверх бекдропа, но без кликов при открытом дровере */
+.is-drawer-open .header {
+  z-index: 1150; /* выше бекдропа, ниже панели */
+  pointer-events: none; /* клики уходят в модалку/бекдроп */
+  filter: saturate(80%) brightness(0.9); /* мягко притушить */
+  -webkit-backdrop-filter: saturate(120%) blur(1px);
+          backdrop-filter: saturate(120%) blur(1px); /* лёгкий блюр поверх фона */
+  transition: filter 0.18s ease, -webkit-backdrop-filter 0.18s ease;
+  transition: filter 0.18s ease, backdrop-filter 0.18s ease;
+  transition: filter 0.18s ease, backdrop-filter 0.18s ease, -webkit-backdrop-filter 0.18s ease;
+} /* видна, но не активна */ /* [2][5] */
+/* Backdrop */
+.ad-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease;
+  z-index: 1100;
+}
+
+.ad-backdrop--open {
+  opacity: 1;
+  pointer-events: auto;
+} /* [1] */
+/* Panel base */
+.ad-panel {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
+  z-index: 1200;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  will-change: transform;
+  transition: transform 0.22s ease;
+} /* [1] */
+/* Bottom sheet */
+.ad-panel--bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: min(720px, 100%);
+  max-height: 80vh;
+  border-radius: 12px 12px 0 0;
+  transform: translateY(100%);
+}
+
+.ad-panel--bottom.ad-panel--open {
+  transform: translateY(0);
+}
+
+.ad-panel--bottom.ad-panel--close {
+  transform: translateY(100%);
+} /* [1] */
+/* Right drawer */
+.ad-panel--right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(420px, 100%);
+  max-height: 100vh;
+  border-radius: 12px 0 0 12px;
+  transform: translateX(100%);
+}
+
+.ad-panel--right.ad-panel--open {
+  transform: translateX(0);
+}
+
+.ad-panel--right.ad-panel--close {
+  transform: translateX(100%);
+} /* [1] */
+.ad-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ad-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ad-close {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.ad-content {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px;
+  max-height: 100%;
+} /* [3][6] */
+/* Ручка/хедер как зона жеста */
+.ad-header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px 8px;
+  border-bottom: 1px solid var(--border);
+  touch-action: none; /* позволяем свайп на ручке */
+}
+
+/* Маленькая полоска-указатель жеста (необязательно) */
+.ad-header::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  width: 40px;
+  height: 4px;
+  margin-left: -20px;
+  border-radius: 999px;
+  background: #ddd;
+}
+
+/* В Drawer скроллит только ad-content, SideAnchors не создаёт второй скролл */
+.ad-content .side-anchors {
+  position: static;
+  top: auto;
+  max-height: none;
+  overflow: visible;
+}
+
 :root {
   --container-width: 1200px;
   --space: 16px;
   --border: #e5e5e5;
   --muted: #666;
+  --header-h: 56px;
 }
 
 html {
@@ -432,8 +699,40 @@ a {
   scroll-margin-top: 80px;
 }
 
+/* Mobile-first, без auto-fill */
 .places-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--space);
+  grid-template-columns: repeat(2, 1fr); /* базово: 2 колонки на телефонах */
+}
+
+/* Очень узкие экраны — если надо строго 2, оставь как есть;
+если совсем ломается — временно 1 колонка на <340px */
+@media (max-width: 340px) {
+  .places-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .place-card__body {
+    padding: 12px; /* было var(--space) = 16px */
+  }
+}
+/* Планшеты маленькие */
+@media (min-width: 600px) and (max-width: 809px) {
+  .places-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Планшеты большие/малые ноуты */
+@media (min-width: 810px) and (max-width: 1199px) {
+  .places-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Десктоп */
+@media (min-width: 1200px) {
+  .places-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=styles.css.map */

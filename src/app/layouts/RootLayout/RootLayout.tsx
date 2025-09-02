@@ -7,24 +7,19 @@ import ScrollTopButton from '../../../features/places/ScrollTopButton/ScrollTopB
 import AnchorsDrawer from '../../../features/places/components/AnchorsDrawer/AnchorsDrawer'
 import SideAnchors from '../../../features/places/components/SideAnchors/SideAnchors'
 import { getPlaces } from '../../../features/places/helpers'
-import { useActiveSlug } from '../../../features/places/hooks/useActiveSlug'
+import {
+  ActiveSlugProvider,
+  useActiveSlugCtx,
+} from '../../../features/places/context/ActiveSlugContext'
 
-export default function RootLayout() {
+export function RootInner() {
   const nav = useNavigate()
   const { pathname } = useLocation()
   const isPlaces = pathname.startsWith('/places')
 
   const [open, setOpen] = useState(false)
   const places = useMemo(() => getPlaces(), [])
-
-  // ids только из places.slug
-  const ids = useMemo(
-    () => places.map(p => p.slug).filter((s): s is string => Boolean(s)),
-    [places],
-  )
-
-  // Включаем IO-трекинг только на /places
-  const activeSlug = useActiveSlug(ids, '0px 0px -50% 0px', 0.5)
+  const { activeSlug } = useActiveSlugCtx()
 
   function handleBrowse() {
     if (!isPlaces) {
@@ -50,14 +45,28 @@ export default function RootLayout() {
       <Footer>&copy; Saint-Petersburg</Footer>
       <ScrollTopButton threshold={300} />
 
-      <AnchorsDrawer open={open} onClose={() => setOpen(false)} side='bottom' title='Browse Places'>
+      <AnchorsDrawer
+        open={open}
+        onClose={() => setOpen(false)}
+        side='bottom'
+        title='Browse Places'
+        activeSlug={activeSlug} // <- пробрасываем из контекста
+      >
         <SideAnchors
           items={places}
-          className='side-anchors--mobile'
+          className='side-anchors side-anchors--drawer' // без вложенного overflow в модалке
           onItemClick={() => setOpen(false)}
           activeSlug={activeSlug}
         />
       </AnchorsDrawer>
     </>
+  )
+}
+
+export default function RootLayout() {
+  return (
+    <ActiveSlugProvider>
+      <RootInner />
+    </ActiveSlugProvider>
   )
 }
