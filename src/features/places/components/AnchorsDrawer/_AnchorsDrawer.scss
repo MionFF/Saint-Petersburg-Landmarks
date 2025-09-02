@@ -124,18 +124,3 @@
   border-radius: 999px;
   background: #ddd;
 }
-
-/* В Drawer скроллит только ad-content, SideAnchors не создаёт второй скролл */
-.ad-content .side-anchors {
-  position: static; // убираем sticky внутри модалки
-  top: auto;
-  max-height: none; // убираем ограничение высоты от мобильной версии
-  overflow: visible; // скролл только у .ad-content
-}
-
-.ad-content .side-anchors {
-  position: static;
-  top: auto;
-  max-height: none;
-  overflow: visible;
-}

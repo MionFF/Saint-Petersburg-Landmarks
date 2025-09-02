@@ -1,5 +1,4 @@
-import { useState, useEffect, useLayoutEffect } from 'react'
-import { useLocation } from 'react-router'
+import { useState, useEffect } from 'react'
 
 type Props = {
   threshold?: number // пикселей, после которых показывать кнопку
@@ -7,41 +6,6 @@ type Props = {
 
 export default function ScrollTopButton({ threshold = 300 }: Props) {
   const [visible, setVisible] = useState(false)
-  const { pathname, hash } = useLocation()
-
-  useLayoutEffect(() => {
-    if (hash) return
-    const html = document.documentElement
-    const had = 'scrollRestoration' in history
-    const prev = had ? (history as any).scrollRestoration : undefined
-
-    html.classList.add('no-smooth')
-    if (had) (history as any).scrollRestoration = 'manual'
-    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
-
-    // вернуть настройки на следующий кадр
-    requestAnimationFrame(() => {
-      html.classList.remove('no-smooth')
-      if (had) (history as any).scrollRestoration = prev ?? 'auto'
-    })
-  }, [pathname, hash])
-
-  // навигация: мгновенно наверх без плавности и авто-restore
-  useEffect(() => {
-    if (hash) return
-    const html = document.documentElement
-    const hadProp = 'scrollRestoration' in history
-    const prev = hadProp ? (history as any).scrollRestoration : undefined
-
-    html.classList.add('no-smooth')
-    if (hadProp) (history as any).scrollRestoration = 'manual'
-    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
-
-    requestAnimationFrame(() => {
-      html.classList.remove('no-smooth')
-      if (hadProp) (history as any).scrollRestoration = prev ?? 'auto'
-    })
-  }, [pathname, hash])
 
   useEffect(() => {
     const onScroll = () => {
