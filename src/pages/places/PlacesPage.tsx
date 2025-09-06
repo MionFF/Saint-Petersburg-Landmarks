@@ -12,37 +12,20 @@ export default function PlacesPage() {
     () => places.map(p => p.slug).filter((s): s is string => Boolean(s)),
     [places],
   )
-  const activeSlug = useActiveSlug(ids, '0px 0px -50% 0px', 0.5)
+  const desktopActiveSlug = useActiveSlug(ids, '0px 0px -50% 0px', 0.5, true)
 
   return (
     <>
       <Subhero />
 
-      {/* Мобильная кнопка + мобильная панель (вне grid) */}
-      {/* <div id='anchors-panel' className='container'>
-        <button
-          className='anchors-toggle'
-          type='button'
-          onClick={toggleOpen}
-          aria-expanded={isOpen}
-        >
-          {isOpen ? 'Hide' : 'Browse places'}
-        </button>
-
-        {isOpen && (
-          <SideAnchors
-            items={places}
-            onItemClick={() => setIsOpen(false)}
-            className='side-anchors--mobile'
-            activeSlug={activeSlug}
-          />
-        )}
-      </div> */}
-
       {/* Десктопный layout с сайдбаром справа */}
       <section className='container' style={{ padding: '24px 0' }}>
         <div className='container-grid'>
-          <SideAnchors items={places} className='side-anchors--grid' activeSlug={activeSlug} />
+          <SideAnchors
+            items={places}
+            className='side-anchors--grid'
+            activeSlug={desktopActiveSlug}
+          />
           <div className='places-stack'>
             {places.map(p => (
               <article key={p.id} id={p.slug} style={{ marginBottom: 24 }}>

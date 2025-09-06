@@ -8,8 +8,11 @@ import AnchorsDrawer from '../../../features/places/components/AnchorsDrawer/Anc
 import SideAnchors from '../../../features/places/components/SideAnchors/SideAnchors'
 import { getPlaces } from '../../../features/places/helpers'
 import { useActiveSlug } from '../../../features/places/hooks/useActiveSlug'
+import { useScrollToTop } from '../../../features/places/hooks/useScrollToTop'
 
 export default function RootLayout() {
+  useScrollToTop()
+
   const nav = useNavigate()
   const { pathname } = useLocation()
   const isPlaces = pathname.startsWith('/places')
@@ -24,13 +27,13 @@ export default function RootLayout() {
   )
 
   // Включаем IO-трекинг только на /places
-  const activeSlug = useActiveSlug(ids, '0px 0px -50% 0px', 0.5)
+  const activeSlug = useActiveSlug(ids, '0px 0px -50% 0px', 0.5, isPlaces)
 
   function handleBrowse() {
     if (!isPlaces) {
       nav('/places')
       // откроем после перехода небольшим таймаутом (когда DOM загрузит страницу)
-      setTimeout(() => setOpen(true), 0)
+      setTimeout(() => setOpen(true), 200)
       return
     }
     setOpen(true)
