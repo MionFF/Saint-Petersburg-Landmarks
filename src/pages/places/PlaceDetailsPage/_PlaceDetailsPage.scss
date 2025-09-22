@@ -1,0 +1,158 @@
+/* PlaceDetailsPage.module.scss (или _PlaceDetailsPage.scss) */
+
+/* base spacing */
+.pd {
+  --gap: 16px;
+  --pad: 16px;
+  --hero-max-img: 910px; /* целевой максимум ширины изображения */ /* [1] */
+  --text-max: 950px; /* максимум ширины текста в правой колонке */
+
+  /* колонка изображения (левая) ограничена разумно, текст занимает остальное */
+  --hero-col: clamp(280px, 42vw, 560px);
+
+  /* высота героя по умолчанию (desktop/tablet) */
+  --hero-h: clamp(320px, 50dvh, 600px);
+
+  display: grid;
+  gap: var(--gap);
+}
+
+/* topbar */
+.pd__topbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+/* hero + body: в разных строках на мобиле, в двух колонках на десктопе */
+.pd__layout {
+  display: grid;
+  gap: calc(var(--gap) * 1.5);
+}
+
+.pd__hero {
+  margin: 0 0 var(--gap) 0;
+}
+
+.pd__hero-img {
+  display: block;
+  inline-size: 100%;
+  max-inline-size: var(--hero-max-img); /* desktop cap */
+  block-size: var(--hero-h);
+  object-fit: cover; /* desktop/tablet: выразительный баннер */ /* [web:13] */
+  object-position: center;
+  border-radius: 8px;
+}
+
+/* body */
+.pd__body {
+  display: grid;
+  gap: calc(var(--gap) * 1.25);
+  max-inline-size: var(--text-max); /* ограничить ширину текста до 950px */
+}
+
+/* headings */
+.pd__header {
+  display: grid;
+  gap: 6px;
+}
+.pd__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+/* content columns */
+.pd__content {
+  display: grid;
+  gap: var(--gap);
+}
+.pd__main {
+  display: grid;
+  gap: var(--gap);
+}
+.pd__section {
+  display: grid;
+  gap: 8px;
+}
+.pd__section-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.pd__desc {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: var(--text-max);
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: inherit;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.btn:hover {
+  background: #f7f7f7;
+}
+.btn--link {
+  text-decoration: none;
+}
+
+/* Мобильный режим: подгоняем контейнер под изображение, без внутренних полей */
+@media (max-width: 768px) {
+  .pd__hero-img {
+    inline-size: 100%; /* edge-to-edge по ширине */
+    max-inline-size: none; /* убрать 910px, чтобы занять всю ширину */
+    block-size: auto; /* авто-высота по реальному изображению */ /* [web:201] */
+    max-block-size: 60dvh; /* но не выше 60% от высоты окна */ /* [web:111] */
+
+    /* Сохраняем пропорции без кропа, убираем «колосы» (их давала фиксированная высота) */
+    object-fit: contain; /* показать весь кадр */ /* [web:13][web:111] */
+    object-position: center;
+    background: transparent; /* никакой подложки — контейнер подгоняется под img */
+    border-radius: 8px;
+  }
+}
+
+/* Десктопная колонка героя — без изменений */
+@media (min-width: 1024px) {
+  .pd__layout {
+    display: grid;
+    grid-template-columns: var(--hero-col) 1fr;
+    align-items: start;
+    column-gap: max(var(--gap), 20px);
+  }
+}
+
+/* Подстройка фокуса для сильно портретных кадров (опционально) */
+@media (max-width: 480px) {
+  .pd__hero-img {
+    object-position: 50% 35%; /* чуть сместить фокус вверх, если низ не важен */ /* [web:34] */
+  }
+}
+
+/* utility: отключение плавности */
+html.no-smooth {
+  scroll-behavior: auto !important;
+}
+
+/* a11y */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
