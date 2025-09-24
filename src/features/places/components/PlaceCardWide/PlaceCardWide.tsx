@@ -1,10 +1,14 @@
 import type { Place } from '../../types'
+import LinkToDetails from '../LinkToDetails/LinkToDetails'
+import { isPlaceWithSlug } from '../../../../features/places/helpers'
 
 type Props = {
   place: Place
 }
 
 export default function PlaceCardWide({ place }: Props) {
+  const canLink = isPlaceWithSlug(place)
+
   return (
     <article className={`place-card place-card--wide`}>
       {place.imageUrl && (
@@ -33,6 +37,11 @@ export default function PlaceCardWide({ place }: Props) {
         {/* <button type='button' className='btn-more'>
           More…
         </button> */}
+        {canLink && (
+          <LinkToDetails slug={place.slug} style={{ width: 'fit-content' }}>
+            Details
+          </LinkToDetails>
+        )}
       </div>
     </article>
   )

@@ -1,8 +1,8 @@
 .side-anchors {
   position: sticky;
-  top: 16px;
+  top: calc(var(--header-h) + 14px);
   align-self: start;
-  max-height: calc(100vh - 32px);
+  max-height: calc(100vh - var(--header-h) - 16px);
   overflow: auto;
   padding: 8px;
   border: 1px solid var(--border);
@@ -14,16 +14,24 @@
   padding: 4px 8px;
   border-radius: 6px;
   color: var(--muted);
+  border: 1px solid transparent;
 
   &:hover {
     background: #f4f4f4;
     color: inherit;
   }
 
+  /* не перебиваем .active жирностью */
   &:active {
-    color: #000;
-    background: #f2f2f2;
+    background: #f0f0f0;
   }
+}
+
+.side-anchors a.active {
+  background: #eaeaea;
+  color: #000;
+  font-weight: 600;
+  border-color: #ddd;
 }
 
 /* Видимость версий сайдбара */
@@ -48,5 +56,23 @@
   /* Прячем гридовый сайдбар в мобильной колонке */
   .side-anchors--grid {
     display: none;
+  }
+}
+
+/* Кнопка anchors-toggle — только мобайл (если ещё не добавлена) */
+.anchors-toggle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .anchors-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    margin: 12px 0;
   }
 }

@@ -1,5 +1,77 @@
 .header {
-  padding: var(--space);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f8f8f8;
   border-bottom: 1px solid var(--border);
-  text-align: center;
+  padding: 0 var(--space);
+  height: var(--header-h);
+  display: grid;
+  align-items: center;
+  /* для iOS safe area */
+  padding-top: max(0px, env(safe-area-inset-top));
+}
+
+.nav {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--header-h);
+  gap: 12px;
+}
+
+.nav__brand a {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: inherit;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+.nav__links a.active {
+  background: #eee;
+}
+
+/* Кнопка Browse — по умолчанию скрыта (десктоп) */
+.nav__browse {
+  display: none;
+  appearance: none;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+.nav__browse:hover {
+  background: #f2f2f2;
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+  .nav {
+    grid-template-columns: auto 1fr auto;
+    gap: 8px;
+  }
+  .nav__links {
+    gap: 8px;
+  }
+  .nav__browse {
+    display: inline-flex;
+  }
 }

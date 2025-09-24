@@ -198,5 +198,205 @@
     "address": "Sadovaya St., 2",
     "imageUrl": "/images/st-michael-castle.webp",
     "websiteUrl": ""
+  },
+  {
+    "id": "21",
+    "slug": "catherine-palace",
+    "name": "Catherine Palace",
+    "category": "palace",
+    "description": "A lavish Baroque residence in Tsarskoe Selo, famed for its gilded facades, the opulent Great Hall, and the legendary Amber Room. Built on an imperial scale by Rastrelli and later refined under Catherine the Great, the palace anchors vast landscaped parks and showcases three centuries of Romanov history.",
+    "address": "7 Sadovaya St., Pushkin",
+    "imageUrl": "/images/catherine-palace.webp",
+    "websiteUrl": "https://tzar.ru/en/objects/ekaterininsky"
+  },
+  {
+    "id": "22",
+    "slug": "submarine-d-2",
+    "name": "Submarine D-2 (Narodovolets)",
+    "category": "museum",
+    "description": "A preserved Soviet submarine turned museum that offers an intimate look at life on board and early 20th‑century naval engineering. Compact compartments, original instruments, and detailed exhibits immerse visitors in the Baltic Fleet’s wartime and interwar stories.",
+    "address": "Shkipersky Proezd, 10",
+    "imageUrl": "/images/submarine-d-2.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "23",
+    "slug": "mariinsky-theatre",
+    "name": "Mariinsky Theatre",
+    "category": "theatre",
+    "description": "St. Petersburg’s storied opera and ballet stage since 1860, where masterpieces by Tchaikovsky, Mussorgsky, and Rimsky‑Korsakov premiered. The historic auditorium, the modern Mariinsky‑II, and the Concert Hall together host world‑class productions under the Mariinsky’s renowned ensembles.",
+    "address": "1 Theatre Square",
+    "imageUrl": "/images/mariinsky-theatre.webp",
+    "websiteUrl": "https://www.mariinsky.ru/en/"
+  },
+  {
+    "id": "24",
+    "slug": "new-holland-island",
+    "name": "New Holland Island",
+    "category": "park",
+    "description": "An 18th‑century triangular artificial island transformed into a cultural park with events, dining, and family spaces. Brick arches, canals, and lawns set a distinctive urban vibe steps from St. Isaac’s Cathedral and the Moika embankments.",
+    "address": "Admiralteysky Canal Emb., 2",
+    "imageUrl": "/images/new-holland-island.webp",
+    "websiteUrl": "https://www.newhollandsp.ru/en/"
+  },
+  {
+    "id": "25",
+    "slug": "eliseyev-emporium",
+    "name": "Eliseyev Emporium",
+    "category": "monument",
+    "description": "A legendary Art Nouveau gourmet emporium and landmark on Nevsky Prospect. Its theatrical window displays, stained glass, and ornate interiors frame a storied food hall celebrated for pastries, chocolates, and culinary souvenirs.",
+    "address": "Nevsky Prospect, 56",
+    "imageUrl": "/images/eliseyev-emporium.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "26",
+    "slug": "alexandrinsky-theatre",
+    "name": "Alexandrinsky Theatre",
+    "category": "theatre",
+    "description": "Russia’s oldest national drama theatre, founded in the 18th century and housed in a grand neoclassical building on Ostrovsky Square. A cradle of Russian stagecraft, it continues to present classical and contemporary productions in a stately setting.",
+    "address": "Ostrovsky Square, 2",
+    "imageUrl": "/images/alexandrinsky-theatre.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "27",
+    "slug": "peter-cabin",
+    "name": "Peter the Great’s Cabin",
+    "category": "museum",
+    "description": "The city’s oldest surviving wooden house, built for Peter the Great in 1703. This modest three‑room cabin reveals the pragmatic spirit of the founder and contrasts with the later imperial grandeur of St. Petersburg.",
+    "address": "Petrovskaya Emb., 6",
+    "imageUrl": "/images/peter-cabin.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "28",
+    "slug": "botanical-garden",
+    "name": "Peter the Great Botanical Garden",
+    "category": "park",
+    "description": "One of Russia’s oldest botanical gardens, famed for vast greenhouses with tropical and subtropical collections. Seasonal blooms, themed plots, and historic glasshouses make it a tranquil retreat for plant lovers year‑round.",
+    "address": "Professora Popova St., 2",
+    "imageUrl": "/images/botanical-garden.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "29",
+    "slug": "faberge-museum",
+    "name": "Fabergé Museum",
+    "category": "museum",
+    "description": "A private museum in the Shuvalov Palace showcasing exquisite jewelry and decorative arts, including imperial Fabergé eggs. The collection highlights Russian craftsmanship, luxury materials, and the artistry of the late imperial era.",
+    "address": "Fontanka River Emb., 21",
+    "imageUrl": "/images/faberge-museum.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "30",
+    "slug": "yusupov-palace",
+    "name": "Yusupov Palace",
+    "category": "palace",
+    "description": "An aristocratic mansion on the Moika with lavish interiors, a private theatre, and exhibits about the palace’s owners. It is also known for the historical account of Grigori Rasputin’s assassination connected to the site.",
+    "address": "Moika River Emb., 94",
+    "imageUrl": "/images/yusupov-palace.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "31",
+    "slug": "menshikov-palace",
+    "name": "Menshikov Palace",
+    "category": "palace",
+    "description": "The early 18th‑century residence of Prince Alexander Menshikov on Vasilievsky Island. With Baroque halls and period decor, today it serves as a branch of the Hermitage focused on Petrine‑era art and interiors.",
+    "address": "Universitetskaya Emb., 15",
+    "imageUrl": "/images/menshikov-palace.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "32",
+    "slug": "mint-yard",
+    "name": "Saint Petersburg Mint",
+    "category": "monument",
+    "description": "Part of the historic Peter and Paul Fortress complex, the Mint symbolizes imperial industry and coinage. Though production is restricted, the site remains a notable landmark of the city’s early economic infrastructure.",
+    "address": "Peter and Paul Fortress",
+    "imageUrl": "/images/mint-yard.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "33",
+    "slug": "st-petersburg-mosque",
+    "name": "Saint Petersburg Grand Mosque",
+    "category": "mosque",
+    "description": "A monumental early 20th‑century mosque crowned with turquoise domes and intricate geometric ornament. Its facade mosaics and lofty prayer hall mark a major Islamic landmark in the city’s architectural mosaic.",
+    "address": "Kronverkskiy Prospekt, 7",
+    "imageUrl": "/images/st-petersburg-mosque.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "34",
+    "slug": "tsarskoye-lyceum",
+    "name": "Tsarskoye Selo Lyceum",
+    "category": "museum",
+    "description": "The famed educational institution associated with Alexander Pushkin, located by the Catherine Palace in Pushkin. Period classrooms and exhibits illuminate the Lyceum’s role in shaping Russian literature and public life.",
+    "address": "Sadovaya St., 2, Pushkin",
+    "imageUrl": "/images/tsarskoye-lyceum.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "35",
+    "slug": "shuvalov-palace",
+    "name": "Shuvalov Palace",
+    "category": "palace",
+    "description": "An elegant 19th‑century palace on the Fontanka, restored to showcase historic interiors and exhibitions. Today it most notably houses the Fabergé Museum’s celebrated collection in a refined riverside setting.",
+    "address": "Fontanka River Emb., 21",
+    "imageUrl": "/images/shuvalov-palace.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "36",
+    "slug": "catherine-park",
+    "name": "Catherine Park",
+    "category": "park",
+    "description": "The landscaped ensemble surrounding the Catherine Palace in Pushkin, combining a formal Old Garden and the picturesque English Park. Pavilions like the Grotto and Hermitage, alleys, bridges, and the Great Pond create a classic imperial retreat spanning centuries of garden art.",
+    "address": "7 Sadovaya St., Pushkin",
+    "imageUrl": "/images/catherine-park.webp",
+    "websiteUrl": "https://tzar.ru/objects/ekaterininskypark"
+  },
+  {
+    "id": "37",
+    "slug": "gulf-of-finland",
+    "name": "Gulf of Finland",
+    "category": "nature",
+    "description": "The Baltic seashore west of St. Petersburg, known for windy promenades, sandy beaches, and expansive sunsets. Coastal forts, modern marinas, and viewpoints along Sestroretsk, Zelenogorsk, and Kronstadt reveal a maritime side of the city beyond the historic center.",
+    "address": "Baltic Sea coast, St. Petersburg",
+    "imageUrl": "/images/gulf-of-finland.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "38",
+    "slug": "gatchina-palace",
+    "name": "Gatchina Palace",
+    "category": "palace",
+    "description": "A grand country residence south of St. Petersburg with fortress‑like silhouettes, ceremonial halls, and scenic parks. Associated with Emperor Paul I, the palace blends romantic landscapes, underground passages, and lakes into a distinctive imperial ensemble.",
+    "address": "1 Krasnoarmeysky Pr., Gatchina",
+    "imageUrl": "/images/gatchina-palace.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "39",
+    "slug": "kronstadt-forts",
+    "name": "Kronstadt Forts",
+    "category": "fortress",
+    "description": "A ring of 18th–20th century sea forts guarding approaches to St. Petersburg in the Gulf of Finland. Brick casemates, batteries, and artificial islands like Fort Alexander I showcase naval engineering and the city’s layered coastal defense history.",
+    "address": "Kronstadt, Kotlin Island",
+    "imageUrl": "/images/kronstadt-forts.webp",
+    "websiteUrl": ""
+  },
+  {
+    "id": "40",
+    "slug": "lake-ladoga",
+    "name": "Lake Ladoga",
+    "category": "nature",
+    "description": "Europe’s largest freshwater lake north‑east of St. Petersburg, ringed by pine forests, granite skerries, and historic islands. Known for the WWII ‘Road of Life’, Ladoga blends raw northern scenery with quiet beaches in the south and dramatic rocky shores and archipelagos in the north.",
+    "address": "Leningrad Oblast & Republic of Karelia",
+    "imageUrl": "/images/lake-ladoga.webp",
+    "websiteUrl": ""
   }
 ]
