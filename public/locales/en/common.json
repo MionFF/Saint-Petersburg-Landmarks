@@ -1,0 +1,32 @@
+{
+  "ui": {
+    "back": "Back",
+    "description": "Description",
+    "address": "Address",
+    "category": "Category",
+    "website": "Official site",
+    "notFound": "Not found",
+    "placeRemoved": "The place does not exist or was removed."
+  },
+  "category": {
+    "theatre": "Theatre",
+    "museum": "Museum",
+    "cathedral": "Cathedral",
+    "park": "Park",
+    "monument": "Monument",
+    "palace": "Palace",
+    "street": "Street",
+    "fortress": "Fortress",
+    "square": "Square",
+    "ensemble": "Ensemble",
+    "skyscraper": "Skyscraper",
+    "nature": "Nature",
+    "mosque": "Mosque"
+  },
+  "heros": {
+    "title": "The best places in St. Petersburg",
+    "description": "Museums, cathedrals, parks, history, and architecture — all in one place",
+    "subTitle": "St. Petersburg, at your pace",
+    "subDescription": "Iconic sights, hidden corners, and everything in between."
+  }
+}

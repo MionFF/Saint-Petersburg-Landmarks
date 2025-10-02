@@ -1,0 +1,202 @@
+{
+  "hermitage": {
+    "name": "The State Hermitage Museum",
+    "description": "One of the world's largest and oldest museums, housed in the former Winter Palace. The Hermitage showcases an immense collection of art and cultural artifacts spanning millennia, from ancient civilizations to European masters. Its opulent interiors, vast galleries, and iconic pale-green facade make it a must‑see for first‑time visitors and seasoned art lovers alike.",
+    "address": "Palace Square, 2"
+  },
+  "church-of-the-savior-on-spilled-blood": {
+    "name": "Church of the Savior on Spilled Blood",
+    "description": "A striking example of Russian Revival architecture, built on the site where Emperor Alexander II was fatally wounded. The church is famous for its vibrant onion domes and one of the world’s largest collections of mosaics, covering interior walls with shimmering biblical scenes and ornate patterns.",
+    "address": "Griboyedov Canal Emb., 2B"
+  },
+  "nevsky-prospect": {
+    "name": "Nevsky Prospect",
+    "description": "The city's main avenue and vibrant cultural artery, lined with historic buildings, shops, cafes, and landmarks. Stretching from the Admiralty to the Alexander Nevsky Lavra, Nevsky Prospect embodies the pace and diversity of St. Petersburg life, especially in the evening when lights and crowds transform the boulevard.",
+    "address": "Nevsky Prospect"
+  },
+  "cruiser-aurora": {
+    "name": "Cruiser Aurora",
+    "description": "A legendary Russian warship and symbol of the 1917 Revolution. Moored on the Neva, the preserved cruiser now serves as a museum ship, offering visitors a look into naval history, life on board, and the events that shaped the country’s early 20th‑century destiny.",
+    "address": "Petrovskaya Emb., 2"
+  },
+  "peter-and-paul-fortress": {
+    "name": "Peter and Paul Fortress",
+    "description": "The birthplace of St. Petersburg, founded by Peter the Great in 1703. Within its walls stand the Peter and Paul Cathedral—burial site of Russian emperors—bastions, museums, and scenic river views. The fortress offers a deep dive into the city’s founding and imperial history.",
+    "address": "Zayachy Island"
+  },
+  "saint-isaacs-cathedral": {
+    "name": "Saint Isaac's Cathedral",
+    "description": "One of the largest domed cathedrals in the world, famed for its gilded dome and grand neoclassical design. The interior features columns of malachite and lapis lazuli, intricate mosaics, and a panoramic colonnade offering sweeping views across St. Petersburg’s historic center.",
+    "address": "St Isaac's Square, 4"
+  },
+  "kunstkamera": {
+    "name": "Kunstkamera",
+    "description": "Russia's first museum, founded by Peter the Great, renowned for its collections in anthropology and natural history. The iconic turquoise-and-white building on the Neva is as memorable as the exhibits inside, bridging scientific curiosity and cultural heritage.",
+    "address": "Universitetskaya Emb., 3"
+  },
+  "peterhof": {
+    "name": "Peterhof",
+    "description": "The 'Russian Versailles': a grand palace-and-park ensemble famed for its cascades, golden fountains, and views across the Gulf of Finland. The Lower Park’s waterworks and the opulent interiors of the Grand Palace showcase imperial luxury at its peak.",
+    "address": "Razvodnaya St., 2, Peterhof"
+  },
+  "alexander-garden": {
+    "name": "Alexander Garden",
+    "description": "A tranquil green space beside the Admiralty, popular for leisurely strolls and photo stops. Lawns, sculptures, and tree‑lined paths offer respite from the bustling center, with quick access to nearby landmarks like Palace Square and Nevsky Prospect.",
+    "address": "Admiralteysky District"
+  },
+  "admiralty-building": {
+    "name": "Admiralty",
+    "description": "A hallmark of the city's skyline with its gilded spire and ship weather vane. Historically the headquarters of the Russian Navy, the Admiralty anchors the perspective of three grand avenues and symbolizes St. Petersburg’s maritime heritage.",
+    "address": "Admiralteysky Pr., 1"
+  },
+  "bronze-horseman": {
+    "name": "The Bronze Horseman",
+    "description": "The iconic equestrian statue of Peter the Great on Senate Square, commissioned by Catherine the Great. Carved from a massive 'Thunder Stone' pedestal, the monument celebrates the city’s visionary founder and remains a powerful symbol of St. Petersburg.",
+    "address": "Senate Square"
+  },
+  "summer-garden": {
+    "name": "Summer Garden",
+    "description": "An elegant historic garden with marble statues, fountains, and carefully manicured alleys. Once a favored retreat of Peter the Great, today it offers a peaceful setting amid baroque aesthetics and seasonal greenery.",
+    "address": "Kutuzova Emb., 2"
+  },
+  "smolny-cathedral": {
+    "name": "Smolny Cathedral",
+    "description": "A stunning blue‑and‑white baroque cathedral designed by Rastrelli, part of the larger Smolny Convent ensemble. Its elegant facades and serene setting create a distinctive landmark away from the busiest tourist routes.",
+    "address": "Rastrelli Square, 1"
+  },
+  "singer-house": {
+    "name": "Singer House (House of Books)",
+    "description": "An Art Nouveau masterpiece on Nevsky Prospect, originally built for the Singer Sewing Machine Company. The building’s glass tower and ornate details stand out, while the ground floor hosts a famous bookstore and cafe.",
+    "address": "Nevsky Prospekt, 28"
+  },
+  "kazan-cathedral": {
+    "name": "Kazan Cathedral",
+    "description": "A monumental neoclassical cathedral with a sweeping colonnade inspired by St. Peter’s Basilica. Dedicated to Our Lady of Kazan, it serves as an active place of worship and a prominent architectural focal point on Nevsky Prospect.",
+    "address": "Nevsky Prospect, 25"
+  },
+  "lakhta-center": {
+    "name": "Lakhta Center",
+    "description": "Europe's tallest skyscraper, a spiraling glass tower on the Gulf of Finland. The complex includes offices, public spaces, and viewpoints, representing modern engineering and the city’s contemporary skyline.",
+    "address": "Lakhtinsky Pr., 2"
+  },
+  "strelka-vasilievsky-island": {
+    "name": "Strelka of Vasilievsky Island",
+    "description": "A scenic spit at the eastern tip of Vasilievsky Island, known for the Rostral Columns and panoramic views across the Neva towards the Hermitage and Peter and Paul Fortress. A classic viewpoint for photos and city vistas.",
+    "address": "Birzhevaya Square"
+  },
+  "palace-square": {
+    "name": "Palace Square",
+    "description": "The grand heart of St. Petersburg, framed by the Winter Palace, the General Staff Building, and the Alexander Column. A historic stage for imperial ceremonies and modern events alike, it symbolizes the city’s scale and grandeur.",
+    "address": "Tsentralny District"
+  },
+  "russian-museum": {
+    "name": "Russian Museum",
+    "description": "A premier collection dedicated to Russian art, from ancient icons to avant‑garde and 20th‑century works. Housed in the Mikhailovsky Palace, the museum provides a comprehensive journey through national artistic heritage.",
+    "address": "Inzhenernaya St., 4"
+  },
+  "st-michael-castle": {
+    "name": "St. Michael's Castle (Mikhailovsky Castle)",
+    "description": "A unique residence of Emperor Paul I with an unusual mix of architectural styles. Surrounded by moats and gardens, the castle carries a dramatic history and now functions as a branch of the Russian Museum.",
+    "address": "Sadovaya St., 2"
+  },
+  "catherine-palace": {
+    "name": "Catherine Palace",
+    "description": "A lavish Baroque residence in Tsarskoe Selo, famed for its gilded facades, the opulent Great Hall, and the legendary Amber Room. Built on an imperial scale by Rastrelli and later refined under Catherine the Great, the palace anchors vast landscaped parks and showcases three centuries of Romanov history.",
+    "address": "7 Sadovaya St., Pushkin"
+  },
+  "submarine-d-2": {
+    "name": "Submarine D-2 (Narodovolets)",
+    "description": "A preserved Soviet submarine turned museum that offers an intimate look at life on board and early 20th‑century naval engineering. Compact compartments, original instruments, and detailed exhibits immerse visitors in the Baltic Fleet’s wartime and interwar stories.",
+    "address": "Shkipersky Proezd, 10"
+  },
+  "mariinsky-theatre": {
+    "name": "Mariinsky Theatre",
+    "description": "St. Petersburg’s storied opera and ballet stage since 1860, where masterpieces by Tchaikovsky, Mussorgsky, and Rimsky‑Korsakov premiered. The historic auditorium, the modern Mariinsky‑II, and the Concert Hall together host world‑class productions under the Mariinsky’s renowned ensembles.",
+    "address": "1 Theatre Square"
+  },
+  "new-holland-island": {
+    "name": "New Holland Island",
+    "description": "An 18th‑century triangular artificial island transformed into a cultural park with events, dining, and family spaces. Brick arches, canals, and lawns set a distinctive urban vibe steps from St. Isaac’s Cathedral and the Moika embankments.",
+    "address": "Admiralteysky Canal Emb., 2"
+  },
+  "eliseyev-emporium": {
+    "name": "Eliseyev Emporium",
+    "description": "A legendary Art Nouveau gourmet emporium and landmark on Nevsky Prospect. Its theatrical window displays, stained glass, and ornate interiors frame a storied food hall celebrated for pastries, chocolates, and culinary souvenirs.",
+    "address": "Nevsky Prospect, 56"
+  },
+  "alexandrinsky-theatre": {
+    "name": "Alexandrinsky Theatre",
+    "description": "Russia’s oldest national drama theatre, founded in the 18th century and housed in a grand neoclassical building on Ostrovsky Square. A cradle of Russian stagecraft, it continues to present classical and contemporary productions in a stately setting.",
+    "address": "Ostrovsky Square, 2"
+  },
+  "peter-cabin": {
+    "name": "Peter the Great’s Cabin",
+    "description": "The city’s oldest surviving wooden house, built for Peter the Great in 1703. This modest three‑room cabin reveals the pragmatic spirit of the founder and contrasts with the later imperial grandeur of St. Petersburg.",
+    "address": "Petrovskaya Emb., 6"
+  },
+  "botanical-garden": {
+    "name": "Peter the Great Botanical Garden",
+    "description": "One of Russia’s oldest botanical gardens, famed for vast greenhouses with tropical and subtropical collections. Seasonal blooms, themed plots, and historic glasshouses make it a tranquil retreat for plant lovers year‑round.",
+    "address": "Professora Popova St., 2"
+  },
+  "faberge-museum": {
+    "name": "Fabergé Museum",
+    "description": "A private museum in the Shuvalov Palace showcasing exquisite jewelry and decorative arts, including imperial Fabergé eggs. The collection highlights Russian craftsmanship, luxury materials, and the artistry of the late imperial era.",
+    "address": "Fontanka River Emb., 21"
+  },
+  "yusupov-palace": {
+    "name": "Yusupov Palace",
+    "description": "An aristocratic mansion on the Moika with lavish interiors, a private theatre, and exhibits about the palace’s owners. It is also known for the historical account of Grigori Rasputin’s assassination connected to the site.",
+    "address": "Moika River Emb., 94"
+  },
+  "menshikov-palace": {
+    "name": "Menshikov Palace",
+    "description": "The early 18th‑century residence of Prince Alexander Menshikov on Vasilievsky Island. With Baroque halls and period decor, today it serves as a branch of the Hermitage focused on Petrine‑era art and interiors.",
+    "address": "Universitetskaya Emb., 15"
+  },
+  "mint-yard": {
+    "name": "Saint Petersburg Mint",
+    "description": "Part of the historic Peter and Paul Fortress complex, the Mint symbolizes imperial industry and coinage. Though production is restricted, the site remains a notable landmark of the city’s early economic infrastructure.",
+    "address": "Peter and Paul Fortress"
+  },
+  "st-petersburg-mosque": {
+    "name": "Saint Petersburg Grand Mosque",
+    "description": "A monumental early 20th‑century mosque crowned with turquoise domes and intricate geometric ornament. Its facade mosaics and lofty prayer hall mark a major Islamic landmark in the city’s architectural mosaic.",
+    "address": "Kronverkskiy Prospekt, 7"
+  },
+  "tsarskoye-lyceum": {
+    "name": "Tsarskoye Selo Lyceum",
+    "description": "The famed educational institution associated with Alexander Pushkin, located by the Catherine Palace in Pushkin. Period classrooms and exhibits illuminate the Lyceum’s role in shaping Russian literature and public life.",
+    "address": "Sadovaya St., 2, Pushkin"
+  },
+  "shuvalov-palace": {
+    "name": "Shuvalov Palace",
+    "description": "An elegant 19th‑century palace on the Fontanka, restored to showcase historic interiors and exhibitions. Today it most notably houses the Fabergé Museum’s celebrated collection in a refined riverside setting.",
+    "address": "Fontanka River Emb., 21"
+  },
+  "catherine-park": {
+    "name": "Catherine Park",
+    "description": "The landscaped ensemble surrounding the Catherine Palace in Pushkin, combining a formal Old Garden and the picturesque English Park. Pavilions like the Grotto and Hermitage, alleys, bridges, and the Great Pond create a classic imperial retreat spanning centuries of garden art.",
+    "address": "7 Sadovaya St., Pushkin"
+  },
+  "gulf-of-finland": {
+    "name": "Gulf of Finland",
+    "description": "The Baltic seashore west of St. Petersburg, known for windy promenades, sandy beaches, and expansive sunsets. Coastal forts, modern marinas, and viewpoints along Sestroretsk, Zelenogorsk, and Kronstadt reveal a maritime side of the city beyond the historic center.",
+    "address": "Baltic Sea coast, St. Petersburg"
+  },
+  "gatchina-palace": {
+    "name": "Gatchina Palace",
+    "description": "A grand country residence south of St. Petersburg with fortress‑like silhouettes, ceremonial halls, and scenic parks. Associated with Emperor Paul I, the palace blends romantic landscapes, underground passages, and lakes into a distinctive imperial ensemble.",
+    "address": "1 Krasnoarmeysky Pr., Gatchina"
+  },
+  "kronstadt-forts": {
+    "name": "Kronstadt Forts",
+    "description": "A ring of 18th–20th century sea forts guarding approaches to St. Petersburg in the Gulf of Finland. Brick casemates, batteries, and artificial islands like Fort Alexander I showcase naval engineering and the city’s layered coastal defense history.",
+    "address": "Kronstadt, Kotlin Island"
+  },
+  "lake-ladoga": {
+    "name": "Lake Ladoga",
+    "description": "Europe’s largest freshwater lake north‑east of St. Petersburg, ringed by pine forests, granite skerries, and historic islands. Known for the WWII ‘Road of Life’, Ladoga blends raw northern scenery with quiet beaches in the south and dramatic rocky shores and archipelagos in the north.",
+    "address": "Leningrad Oblast & Republic of Karelia"
+  }
+}
