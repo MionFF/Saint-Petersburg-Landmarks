@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import 'flag-icons/css/flag-icons.min.css'
 
-type Lang = { code: 'en' | 'ru'; label: string; flag?: React.ReactNode }
+type Lang = { code: 'en' | 'ru' | 'es' | 'fr' | 'de'; label: string; flag?: React.ReactNode }
 
 export default function LanguageMenu() {
   const { i18n } = useTranslation()
@@ -15,12 +15,14 @@ export default function LanguageMenu() {
     () => [
       { code: 'en', label: 'English', flag: <span className='fi fi-us'></span> },
       { code: 'ru', label: 'Русский', flag: <span className='fi fi-ru'></span> },
-      // Добавлять новые языки сюда: 'de', 'fr', 'es', 'zh' ...
+      { code: 'es', label: 'Español', flag: <span className='fi fi-es'></span> },
+      { code: 'fr', label: 'Français', flag: <span className='fi fi-fr'></span> },
+      { code: 'de', label: 'Deutsch', flag: <span className='fi fi-de'></span> },
     ],
     [],
   )
 
-  const current = (i18n.language || 'en').split('-')[0] as Lang['code']
+  const current = (i18n.language || 'en' || 'es' || 'fr' || 'de').split('-')[0] as Lang['code']
   const activeIndex = Math.max(
     0,
     langs.findIndex(l => l.code === current),

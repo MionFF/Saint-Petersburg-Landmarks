@@ -1,0 +1,202 @@
+{
+  "hermitage": {
+    "name": "Staatliche Eremitage",
+    "description": "Eines der größten und ältesten Museen der Welt, untergebracht im ehemaligen Winterpalast. Die Eremitage zeigt eine immense Sammlung von Kunst und Kulturgütern aus Jahrtausenden – von antiken Zivilisationen bis zu europäischen Meistern. Prächtige Interieurs, weitläufige Galerien und die ikonische blassgrüne Fassade machen sie zu einem Muss – sowohl für Erstbesucher als auch für versierte Kunstliebhaber.",
+    "address": "Palastplatz 2"
+  },
+  "church-of-the-savior-on-spilled-blood": {
+    "name": "Auferstehungskirche (Bluterlöserkirche)",
+    "description": "Ein eindrucksvolles Beispiel des russischen Revivals, erbaut an der Stelle, an der Kaiser Alexander II. tödlich verwundet wurde. Berühmt für ihre farbigen Zwiebeltürme und eine der größten Mosaiksammlungen der Welt, die die Innenwände mit schimmernden biblischen Szenen und ornamentalen Mustern bedeckt.",
+    "address": "Ufer des Gribojedow-Kanals, 2B"
+  },
+  "nevsky-prospect": {
+    "name": "Newski-Prospekt",
+    "description": "Die Hauptallee und kulturelle Lebensader der Stadt, gesäumt von historischen Gebäuden, Geschäften, Cafés und Wahrzeichen. Vom Admiralitätsgebäude bis zur Aleksander-Newski-Lawra verkörpert der Newski-Prospekt das Tempo und die Vielfalt des Petersburger Lebens – besonders am Abend, wenn Lichter und Menschenmengen den Boulevard verwandeln.",
+    "address": "Newski-Prospekt"
+  },
+  "cruiser-aurora": {
+    "name": "Kreuzer Aurora",
+    "description": "Legendäres russisches Kriegsschiff und Symbol der Revolution von 1917. An der Newa vertäut, dient der erhaltene Kreuzer heute als Museumsschiff und bietet Einblicke in Marinegeschichte, Leben an Bord und Ereignisse, die das frühe 20. Jahrhundert des Landes prägten.",
+    "address": "Petrowskaja-Ufer, 2"
+  },
+  "peter-and-paul-fortress": {
+    "name": "Peter-und-Paul-Festung",
+    "description": "Die Geburtsstätte Sankt Petersburgs, gegründet von Peter dem Großen im Jahr 1703. Innerhalb der Mauern stehen die Peter-und-Paul-Kathedrale – Begräbnisstätte der russischen Kaiser –, Bastionen, Museen und Aussichtspunkte auf den Fluss. Die Festung bietet einen tiefen Einblick in die Gründung der Stadt und ihre imperiale Geschichte.",
+    "address": "Haseninsel (Sajatschi-Insel)"
+  },
+  "saint-isaacs-cathedral": {
+    "name": "Isaakskathedrale",
+    "description": "Eine der größten Kuppelkathedralen der Welt, berühmt für ihre vergoldete Kuppel und ihr grandioses neoklassizistisches Design. Im Inneren: Säulen aus Malachit und Lapislazuli, kunstvolle Mosaiken und eine Panorama-Kolonnade mit weitem Blick über das historische Zentrum.",
+    "address": "Isaaksplatz 4"
+  },
+  "kunstkamera": {
+    "name": "Kunstkamera",
+    "description": "Das erste Museum Russlands, gegründet von Peter dem Großen, bekannt für seine Sammlungen zur Anthropologie und Naturgeschichte. Das ikonische türkis‑weiße Gebäude an der Newa ist ebenso einprägsam wie die Ausstellungen, die wissenschaftliche Neugier mit kulturellem Erbe verbinden.",
+    "address": "Universität-Ufer, 3"
+  },
+  "peterhof": {
+    "name": "Peterhof",
+    "description": "Das „russische Versailles“: ein großartiger Palast‑ und Parkkomplex, berühmt für Kaskaden, goldene Fontänen und Blicke über den Finnischen Meerbusen. Die Wasseranlagen des Unteren Parks und die opulenten Interieurs des Großen Palastes zeigen kaiserlichen Luxus auf höchstem Niveau.",
+    "address": "Razwodnaja-Str. 2, Peterhof"
+  },
+  "alexander-garden": {
+    "name": "Alexandergarten",
+    "description": "Ein ruhiger Grünraum neben der Admiralität, beliebt für gemächliche Spaziergänge und Fotostopps. Rasenflächen, Skulpturen und baumgesäumte Wege bieten Erholung vom geschäftigen Zentrum – nahe am Palastplatz und dem Newski-Prospekt.",
+    "address": "Bezirk Admiralteiski"
+  },
+  "admiralty-building": {
+    "name": "Admiralitätsgebäude",
+    "description": "Ein Wahrzeichen der Stadtsilhouette mit vergoldeter Turmspitze und Schiffs‑Windfahne. Historisch der Sitz der russischen Marine, eröffnet die Admiralität die Perspektive dreier großer Avenuen und symbolisiert das maritime Erbe der Stadt.",
+    "address": "Admiralteiski‑Prospekt 1"
+  },
+  "bronze-horseman": {
+    "name": "Der eherne Reiter",
+    "description": "Das ikonische Reiterstandbild Peters des Großen auf dem Senatsplatz, gestiftet von Katharina der Großen. Auf dem kolossalen „Donnerstein“ errichtet, ehrt das Monument den visionären Stadtgründer und bleibt ein kraftvolles Symbol Sankt Petersburgs.",
+    "address": "Senatsplatz"
+  },
+  "summer-garden": {
+    "name": "Sommergarten",
+    "description": "Ein eleganter historischer Garten mit Marmorstatuen, Springbrunnen und sorgfältig gepflegten Alleen. Einst bevorzugter Rückzugsort Peters des Großen, bietet er heute eine friedliche Umgebung mit barocken Akzenten und saisonalem Grün.",
+    "address": "Kutusow‑Ufer 2"
+  },
+  "smolny-cathedral": {
+    "name": "Smolny‑Kathedrale",
+    "description": "Eine prachtvolle blau‑weiße Barockkathedrale nach Plänen Rastrellis, Teil des größeren Smolny‑Klosterensembles. Ihre eleganten Fassaden und das stille Umfeld machen sie zu einem markanten Wahrzeichen abseits der belebtesten Touristenrouten.",
+    "address": "Rastrelli‑Platz 1"
+  },
+  "singer-house": {
+    "name": "Singer‑Haus (Haus des Buches)",
+    "description": "Ein Jugendstil‑Meisterwerk am Newski‑Prospekt, ursprünglich für die Singer‑Nähmaschinenfirma errichtet. Der verglaste Turm und die reich verzierten Details stechen hervor; im Erdgeschoss befinden sich eine berühmte Buchhandlung und ein Café.",
+    "address": "Newski‑Prospekt 28"
+  },
+  "kazan-cathedral": {
+    "name": "Kasaner Kathedrale",
+    "description": "Eine monumentale neoklassizistische Kathedrale mit weit geschwungener Kolonnade, inspiriert vom Petersdom. Der Gottesmutter von Kasan geweiht, ist sie ein aktiver Andachtsort und eine markante architektonische Dominante des Newski‑Prospekts.",
+    "address": "Newski‑Prospekt 25"
+  },
+  "lakhta-center": {
+    "name": "Lakhta Center",
+    "description": "Der höchste Wolkenkratzer Europas – ein spiralförmiger Glasturm am Finnischen Meerbusen. Der Komplex umfasst Büros, öffentliche Bereiche und Aussichtspunkte und steht für moderne Ingenieurskunst und die zeitgenössische Stadtsilhouette.",
+    "address": "Lakhtinski‑Prospekt 2"
+  },
+  "strelka-vasilievsky-island": {
+    "name": "Strelka der Wassiljewski‑Insel",
+    "description": "Eine malerische Landspitze am Ostende der Wassiljewski‑Insel, bekannt für die Rostra‑Säulen und Panoramablicke über die Newa zum Winterpalast und zur Peter‑und‑Paul‑Festung. Ein klassischer Aussichtspunkt für Fotos und Stadtansichten.",
+    "address": "Börsenplatz"
+  },
+  "palace-square": {
+    "name": "Palastplatz",
+    "description": "Das große Herz Sankt Petersburgs, gerahmt vom Winterpalast, dem Generalstabsgebäude und der Alexandersäule. Eine historische Bühne für kaiserliche Zeremonien wie moderne Veranstaltungen – Sinnbild für Maßstab und Grandeur der Stadt.",
+    "address": "Bezirk Tsentralny"
+  },
+  "russian-museum": {
+    "name": "Russisches Museum",
+    "description": "Eine führende Sammlung, die der russischen Kunst gewidmet ist – von alten Ikonen bis zur Avantgarde und Kunst des 20. Jahrhunderts. Untergebracht im Michailowski‑Palast, bietet das Museum einen umfassenden Rundgang durch das nationale Kunst­erbe.",
+    "address": "Ingenieursstraße 4"
+  },
+  "st-michael-castle": {
+    "name": "Sankt‑Michael‑Schloss (Michailowski‑Schloss)",
+    "description": "Eine außergewöhnliche Residenz von Kaiser Paul I. mit einer ungewöhnlichen Mischung architektonischer Stile. Von Gräben und Gärten umgeben, trägt das Schloss eine dramatische Geschichte und fungiert heute als Zweigstelle des Russischen Museums.",
+    "address": "Sadovaja‑Straße 2"
+  },
+  "catherine-palace": {
+    "name": "Katharinenpalast",
+    "description": "Eine prunkvolle Barockresidenz in Zarskoje Selo, berühmt für vergoldete Fassaden, den opulenten Großen Saal und das legendäre Bernsteinzimmer. Im imperialen Maßstab von Rastrelli errichtet und unter Katharina der Großen veredelt, krönt der Palast weitläufige Landschaftsparks und zeigt drei Jahrhunderte Romanow‑Geschichte.",
+    "address": "Sadovaja‑Straße 7, Puschkin"
+  },
+  "submarine-d-2": {
+    "name": "U‑Boot D‑2 (Narodowolets)",
+    "description": "Ein erhaltenes sowjetisches U‑Boot als Museum, das einen unmittelbaren Blick auf das Leben an Bord und die Marine‑Ingenieurskunst des frühen 20. Jahrhunderts bietet. Enge Abteile, originale Instrumente und detailreiche Ausstellungen versetzen Besucher in die Kriegs‑ und Zwischenkriegszeit der Baltischen Flotte.",
+    "address": "Schkiperski‑Durchgang 10"
+  },
+  "mariinsky-theatre": {
+    "name": "Mariinski‑Theater",
+    "description": "Die traditionsreiche Opern‑ und Ballettbühne Sankt Petersburgs seit 1860, wo Meisterwerke von Tschaikowski, Mussorgski und Rimski‑Korsakow uraufgeführt wurden. Der historische Saal, das moderne Mariinski‑II und die Konzerthalle beherbergen gemeinsam Produktionen von Weltrang.",
+    "address": "Theaterplatz 1"
+  },
+  "new-holland-island": {
+    "name": "Neu‑Holländische Insel",
+    "description": "Eine dreieckige künstliche Insel aus dem 18. Jahrhundert, verwandelt in einen Kulturpark mit Events, Gastronomie und Familienbereichen. Ziegelbögen, Kanäle und Rasenflächen schaffen eine unverwechselbare urbane Atmosphäre unweit der Isaakskathedrale und der Ufer der Moika.",
+    "address": "Admiralitäts‑Kanalufer 2"
+  },
+  "eliseyev-emporium": {
+    "name": "Elisseeff‑Emporium",
+    "description": "Ein legendäres Feinkosthaus im Jugendstil und ein Wahrzeichen am Newski‑Prospekt. Theatralische Schaufenster, Buntglas und reich verzierte Interieurs rahmen eine renommierte Genuss‑Halle für Gebäck, Schokolade und kulinarische Souvenirs.",
+    "address": "Newski‑Prospekt 56"
+  },
+  "alexandrinsky-theatre": {
+    "name": "Alexandrinski‑Theater",
+    "description": "Das älteste nationale Sprechtheater Russlands, im 18. Jahrhundert gegründet, in einem majestätischen neoklassizistischen Gebäude am Ostrowski‑Platz. Wiege der russischen Bühnenkunst, zeigt es weiterhin klassische und zeitgenössische Inszenierungen in würdigem Rahmen.",
+    "address": "Ostrowski‑Platz 2"
+  },
+  "peter-cabin": {
+    "name": "Häuschen Peters des Großen",
+    "description": "Das älteste erhaltene Holzhaus der Stadt, 1703 für Peter den Großen erbaut. Diese bescheidene Dreizimmer‑Behausung zeigt den pragmatischen Geist des Gründers und kontrastiert mit der späteren imperialen Pracht.",
+    "address": "Petrowskaja‑Ufer 6"
+  },
+  "botanical-garden": {
+    "name": "Botanischer Garten Peter des Großen",
+    "description": "Einer der ältesten botanischen Gärten Russlands, berühmt für weitläufige Gewächshäuser mit tropischen und subtropischen Sammlungen. Saisonale Blüten, Themenbeete und historische Glasbauten machen ihn ganzjährig zu einem ruhigen Rückzugsort für Pflanzenfreunde.",
+    "address": "Professor‑Popow‑Straße 2"
+  },
+  "faberge-museum": {
+    "name": "Fabergé‑Museum",
+    "description": "Ein privates Museum im Schuwalow‑Palast mit erlesener Schmuck‑ und Kunsthandwerkssammlung, darunter kaiserliche Fabergé‑Eier. Die Kollektion hebt russisches Kunsthandwerk, edle Materialien und die Kunst der späten Kaiserzeit hervor.",
+    "address": "Fontanka‑Ufer 21"
+  },
+  "yusupov-palace": {
+    "name": "Jussupow‑Palast",
+    "description": "Ein aristokratisches Stadtpalais an der Moika mit prunkvollen Interieurs, eigenem Theater und Ausstellungen über die Besitzer. Bekannt auch im Zusammenhang mit der Ermordung Grigori Rasputins.",
+    "address": "Moika‑Ufer 94"
+  },
+  "menshikov-palace": {
+    "name": "Menschikow‑Palast",
+    "description": "Residenz des Prinzen Alexander Menschikow vom Beginn des 18. Jahrhunderts auf der Wassiljewski‑Insel. Mit barocken Sälen und Interieurs der Petrinischen Epoche – heute eine Zweigstelle der Eremitage mit Fokus auf Kunst und Ausstattung der Peterzeit.",
+    "address": "Universität‑Ufer 15"
+  },
+  "mint-yard": {
+    "name": "Münzstätte Sankt Petersburg",
+    "description": "Teil des historischen Komplexes der Peter‑und‑Paul‑Festung, Sinnbild kaiserlicher Industrie und Münzprägung. Obwohl die Produktion eingeschränkt ist, bleibt der Ort ein markantes Zeugnis der frühen wirtschaftlichen Infrastruktur der Stadt.",
+    "address": "Peter‑und‑Paul‑Festung"
+  },
+  "st-petersburg-mosque": {
+    "name": "Große Moschee von Sankt Petersburg",
+    "description": "Monumentale Moschee des frühen 20. Jahrhunderts, gekrönt von türkisfarbenen Kuppeln und reichhaltigem geometrischem Ornament. Fassadenmosaike und die hohe Gebetshalle machen sie zu einem bedeutenden islamischen Wahrzeichen im architektonischen Mosaik der Stadt.",
+    "address": "Kronwerkski‑Prospekt 7"
+  },
+  "tsarskoye-lyceum": {
+    "name": "Lyzeum von Zarskoje Selo",
+    "description": "Berühmte Bildungseinrichtung mit Bezug zu Alexander Puschkin, neben dem Katharinenpalast in Puschkin gelegen. Historische Klassenräume und Ausstellungen beleuchten die Rolle des Lyzeums für die russische Literatur und das öffentliche Leben.",
+    "address": "Sadovaja‑Straße 2, Puschkin"
+  },
+  "shuvalov-palace": {
+    "name": "Schuwalow‑Palast",
+    "description": "Eleganter Palast des 19. Jahrhunderts an der Fontanka, restauriert für historische Interieurs und Ausstellungen. Heute beherbergt er vor allem die berühmte Sammlung des Fabergé‑Museums in edler Flusslage.",
+    "address": "Fontanka‑Ufer 21"
+  },
+  "catherine-park": {
+    "name": "Katharinenpark",
+    "description": "Das Landschaftsensemble rund um den Katharinenpalast in Puschkin, das den formalen Alten Garten und den pittoresken Englischen Park verbindet. Pavillons wie die Grotte und das Eremitage‑Pavillon, Alleen, Brücken und der Große Teich formen einen klassischen kaiserlichen Rückzugsort über Jahrhunderte Gartenkunst.",
+    "address": "Sadovaja‑Straße 7, Puschkin"
+  },
+  "gulf-of-finland": {
+    "name": "Finnischer Meerbusen",
+    "description": "Die baltische Küste westlich von Sankt Petersburg, bekannt für windige Promenaden, Sandstrände und weite Sonnenuntergänge. Küstenforts, moderne Marinas und Aussichtspunkte in Sestrorezk, Selenogorsk und Kronstadt zeigen die maritime Seite der Stadt jenseits des historischen Zentrums.",
+    "address": "Baltische Küste, Sankt Petersburg"
+  },
+  "gatchina-palace": {
+    "name": "Palast Gattschina",
+    "description": "Große Landsitz‑Residenz südlich von Sankt Petersburg mit festungsartigen Silhouetten, Festsälen und malerischen Parkanlagen. Verbunden mit Kaiser Paul I., vereint der Palast romantische Landschaften, unterirdische Gänge und Seen zu einem unverwechselbaren Ensemble.",
+    "address": "Krasnoarmeiski‑Prospekt 1, Gattschina"
+  },
+  "kronstadt-forts": {
+    "name": "Festungen von Kronstadt",
+    "description": "Ein Ring von See‑Festungen aus dem 18.–20. Jahrhundert, der die Zugänge zu Sankt Petersburg im Finnischen Meerbusen schützt. Ziegelkasematten, Batterien und künstliche Inseln wie Fort Alexander I. veranschaulichen Marine‑Ingenieurskunst und die vielschichtige Geschichte der Küstenverteidigung.",
+    "address": "Kronstadt, Insel Kotlin"
+  },
+  "lake-ladoga": {
+    "name": "Ladogasee",
+    "description": "Der größte Süßwassersee Europas nordöstlich von Sankt Petersburg, umgeben von Kiefernwäldern, Granitklippen und historischen Inseln. Bekannt durch die „Straße des Lebens“ im Zweiten Weltkrieg, vereint der Ladogasee raue nordische Natur mit ruhigen Stränden im Süden sowie dramatischen Felsufern und Archipelen im Norden.",
+    "address": "Oblast Leningrad und Republik Karelien"
+  }
+}

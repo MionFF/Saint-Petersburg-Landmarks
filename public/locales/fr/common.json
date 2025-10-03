@@ -1,0 +1,34 @@
+{
+  "ui": {
+    "home": "Accueil",
+    "places": "Lieux",
+    "back": "Retour",
+    "description": "Description",
+    "address": "Adresse",
+    "category": "Catégorie",
+    "website": "Site officiel",
+    "notFound": "Introuvable",
+    "placeRemoved": "Le lieu n’existe pas ou a été supprimé."
+  },
+  "category": {
+    "theatre": "Théâtre",
+    "museum": "Musée",
+    "cathedral": "Cathédrale",
+    "park": "Parc",
+    "monument": "Monument",
+    "palace": "Palais",
+    "street": "Rue",
+    "fortress": "Forteresse",
+    "square": "Place",
+    "ensemble": "Ensemble",
+    "skyscraper": "Gratte‑ciel",
+    "nature": "Nature",
+    "mosque": "Mosquée"
+  },
+  "heros": {
+    "title": "Les meilleurs lieux de Saint‑Pétersbourg",
+    "description": "Musées, cathédrales, parcs, histoire et architecture — tout au même endroit",
+    "subTitle": "Saint‑Pétersbourg, à votre rythme",
+    "subDescription": "Sites emblématiques, recoins cachés et tout ce qu’il y a entre les deux."
+  }
+}

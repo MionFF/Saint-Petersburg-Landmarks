@@ -1,0 +1,202 @@
+{
+  "hermitage": {
+    "name": "Museo Estatal del Hermitage",
+    "description": "Uno de los museos más grandes y antiguos del mundo, ubicado en el antiguo Palacio de Invierno. El Hermitage exhibe una inmensa colección de arte y objetos culturales que abarcan milenios, desde civilizaciones antiguas hasta maestros europeos. Sus suntuosos interiores, vastas galerías y su icónica fachada verde pálido lo convierten en una visita obligada tanto para quienes vienen por primera vez como para los amantes del arte.",
+    "address": "Plaza del Palacio, 2"
+  },
+  "church-of-the-savior-on-spilled-blood": {
+    "name": "Iglesia del Salvador sobre la Sangre Derramada",
+    "description": "Un llamativo ejemplo de arquitectura del Renacimiento ruso, construida en el lugar donde el emperador Alejandro II fue mortalmente herido. La iglesia es famosa por sus vibrantes cúpulas bulbosas y por una de las mayores colecciones de mosaicos del mundo, que cubren los muros interiores con deslumbrantes escenas bíblicas y motivos ornamentales.",
+    "address": "Malecón del Canal Griboyédov, 2B"
+  },
+  "nevsky-prospect": {
+    "name": "Perspectiva Nevski",
+    "description": "La arteria principal y vibrante de la ciudad, flanqueada por edificios históricos, tiendas, cafés y lugares emblemáticos. Desde el Almirantazgo hasta el Monasterio de Alejandro Nevski, la Nevski encarna el ritmo y la diversidad de la vida en San Petersburgo, especialmente por la noche, cuando las luces y la gente transforman el bulevar.",
+    "address": "Perspectiva Nevski"
+  },
+  "cruiser-aurora": {
+    "name": "Crucero Aurora",
+    "description": "Legendario buque de guerra ruso y símbolo de la Revolución de 1917. Amarrado en el Nevá, el crucero conservado funciona hoy como museo, ofreciendo una mirada a la historia naval, la vida a bordo y los acontecimientos que marcaron el destino del país a inicios del siglo XX.",
+    "address": "Malecón Petrovskaya, 2"
+  },
+  "peter-and-paul-fortress": {
+    "name": "Fortaleza de Pedro y Pablo",
+    "description": "Lugar de nacimiento de San Petersburgo, fundada por Pedro el Grande en 1703. Dentro de sus murallas se encuentran la Catedral de San Pedro y San Pablo —panteón de los emperadores rusos—, baluartes, museos y panorámicas del río. La fortaleza ofrece una inmersión profunda en los orígenes de la ciudad y su historia imperial.",
+    "address": "Isla Záyachi"
+  },
+  "saint-isaacs-cathedral": {
+    "name": "Catedral de San Isaac",
+    "description": "Una de las catedrales con cúpula más grandes del mundo, célebre por su cúpula dorada y su imponente diseño neoclásico. El interior presenta columnas de malaquita y lapislázuli, intrincados mosaicos y una columnata panorámica con vistas amplias del centro histórico de San Petersburgo.",
+    "address": "Plaza de San Isaac, 4"
+  },
+  "kunstkamera": {
+    "name": "Kunstkámera",
+    "description": "El primer museo de Rusia, fundado por Pedro el Grande, reconocido por sus colecciones de antropología e historia natural. El icónico edificio turquesa y blanco a orillas del Nevá es tan memorable como sus exhibiciones, que combinan curiosidad científica y patrimonio cultural.",
+    "address": "Malecón Universitetskaya, 3"
+  },
+  "peterhof": {
+    "name": "Peterhof",
+    "description": "El “Versalles ruso”: un grandioso conjunto palaciego y de parques famoso por sus cascadas, fuentes doradas y vistas al Golfo de Finlandia. Las fuentes del Parque Inferior y los opulentos interiores del Gran Palacio muestran el máximo esplendor imperial.",
+    "address": "Calle Razvodnaya, 2, Peterhof"
+  },
+  "alexander-garden": {
+    "name": "Jardín Alexander",
+    "description": "Un tranquilo espacio verde junto al Almirantazgo, popular para paseos y fotografías. Céspedes, esculturas y alamedas arboladas ofrecen un respiro del bullicioso centro, con rápido acceso a la Plaza del Palacio y la Perspectiva Nevski.",
+    "address": "Distrito Admiralteyski"
+  },
+  "admiralty-building": {
+    "name": "Almirantazgo",
+    "description": "Un hito del perfil urbano con su aguja dorada y veleta en forma de barco. Históricamente, sede de la Marina rusa, el Almirantazgo ancla la perspectiva de tres grandes avenidas y simboliza la herencia marítima de San Petersburgo.",
+    "address": "Prospekt Admiralteyski, 1"
+  },
+  "bronze-horseman": {
+    "name": "El Jinete de Bronce",
+    "description": "La icónica estatua ecuestre de Pedro el Grande en la Plaza del Senado, encargada por Catalina la Grande. Tallado sobre el gigantesco “Piedra del Trueno”, el monumento celebra al visionario fundador de la ciudad y sigue siendo su poderoso símbolo.",
+    "address": "Plaza del Senado"
+  },
+  "summer-garden": {
+    "name": "Jardín de Verano",
+    "description": "Elegante jardín histórico con estatuas de mármol, fuentes y avenidas cuidadosamente trazadas. Antaño retiro predilecto de Pedro el Grande, hoy ofrece un entorno sereno con estética barroca y verdor estacional.",
+    "address": "Malecón de Kutúzov, 2"
+  },
+  "smolny-cathedral": {
+    "name": "Catedral de Smolny",
+    "description": "Impresionante catedral barroca azul y blanca diseñada por Rastrelli, parte del conjunto del convento de Smolny. Sus elegantes fachadas y ambiente sereno la convierten en un hito distintivo alejado de las rutas más concurridas.",
+    "address": "Plaza Rastrelli, 1"
+  },
+  "singer-house": {
+    "name": "Casa Singer (Casa del Libro)",
+    "description": "Una joya del Art Nouveau en la Perspectiva Nevski, originalmente construida para la compañía Singer. La torre acristalada y los detalles ornamentales destacan; en la planta baja se encuentra una célebre librería y un café.",
+    "address": "Perspectiva Nevski, 28"
+  },
+  "kazan-cathedral": {
+    "name": "Catedral de Kazán",
+    "description": "Monumental catedral neoclásica con una amplia columnata inspirada en la Basílica de San Pedro. Dedicada a la Virgen de Kazán, es un templo en activo y una destacada referencia arquitectónica de la Nevski.",
+    "address": "Perspectiva Nevski, 25"
+  },
+  "lakhta-center": {
+    "name": "Lakhta Center",
+    "description": "El rascacielos más alto de Europa, una torre de vidrio en espiral a orillas del Golfo de Finlandia. El complejo incluye oficinas, espacios públicos y miradores, representando la ingeniería moderna y el perfil contemporáneo de la ciudad.",
+    "address": "Prospekt Lakhtinski, 2"
+  },
+  "strelka-vasilievsky-island": {
+    "name": "Strelka de la Isla Vasílievski",
+    "description": "Punta escénica en el extremo oriental de la Isla Vasílievski, conocida por las Columnas Rostrales y las vistas panorámicas del Nevá hacia el Hermitage y la Fortaleza de Pedro y Pablo. Un mirador clásico para fotos y paisajes urbanos.",
+    "address": "Plaza de la Bolsa"
+  },
+  "palace-square": {
+    "name": "Plaza del Palacio",
+    "description": "El gran corazón de San Petersburgo, enmarcado por el Palacio de Invierno, el Estado Mayor y la Columna de Alejandro. Un escenario histórico tanto para ceremonias imperiales como para eventos modernos, símbolo de la escala y grandeza de la ciudad.",
+    "address": "Distrito Tsentralny"
+  },
+  "russian-museum": {
+    "name": "Museo Ruso",
+    "description": "Colección de referencia dedicada al arte ruso, desde iconos antiguos hasta vanguardias y obras del siglo XX. Ubicado en el Palacio Mijaílovski, el museo ofrece un recorrido completo por el patrimonio artístico nacional.",
+    "address": "Calle Inzhenernaya, 4"
+  },
+  "st-michael-castle": {
+    "name": "Castillo Mijaílovski (Castillo de San Miguel)",
+    "description": "Residencia singular del emperador Pablo I con una inusual mezcla de estilos arquitectónicos. Rodeado de fosos y jardines, el castillo tiene una historia dramática y hoy funciona como una sede del Museo Ruso.",
+    "address": "Calle Sadóvaya, 2"
+  },
+  "catherine-palace": {
+    "name": "Palacio de Catalina",
+    "description": "Suntuosa residencia barroca en Tsárskoe Seló, famosa por sus fachadas doradas, el Gran Salón y la legendaria Sala de Ámbar. Construido a escala imperial por Rastrelli y refinado bajo Catalina la Grande, el palacio corona extensos parques paisajísticos y muestra tres siglos de historia de los Románov.",
+    "address": "Calle Sadóvaya, 7, Pushkin"
+  },
+  "submarine-d-2": {
+    "name": "Submarino D-2 (Narodovolets)",
+    "description": "Submarino soviético conservado y convertido en museo que ofrece una mirada cercana a la vida a bordo y a la ingeniería naval de principios del siglo XX. Compartimentos compactos, instrumentos originales y exposiciones detalladas sumergen al visitante en la historia de la Flota del Báltico en tiempos de guerra y entre guerras.",
+    "address": "Proezd Shkipersky, 10"
+  },
+  "mariinsky-theatre": {
+    "name": "Teatro Mariinski",
+    "description": "Histórica escena de ópera y ballet de San Petersburgo desde 1860, donde se estrenaron obras de Chaikovski, Mussorgski y Rimski‑Kórsakov. La sala histórica, el moderno Mariinski‑II y la Sala de Conciertos acogen producciones de clase mundial de sus renombrados conjuntos.",
+    "address": "Plaza del Teatro, 1"
+  },
+  "new-holland-island": {
+    "name": "Isla Nueva Holanda",
+    "description": "Isla artificial triangular del siglo XVIII transformada en parque cultural con eventos, gastronomía y espacios familiares. Arcos de ladrillo, canales y praderas crean un ambiente urbano singular a pocos pasos de la Catedral de San Isaac y los malecones del río Moika.",
+    "address": "Malecón del Canal del Almirantazgo, 2"
+  },
+  "eliseyev-emporium": {
+    "name": "Emporio Eliséev",
+    "description": "Legendario emporio gourmet de estilo modernista y un hito de la Perspectiva Nevski. Sus escaparates teatrales, vitrales e interiores ornamentados enmarcan un histórico salón gastronómico famoso por repostería, chocolates y recuerdos culinarios.",
+    "address": "Perspectiva Nevski, 56"
+  },
+  "alexandrinsky-theatre": {
+    "name": "Teatro Alexandrinski",
+    "description": "El teatro nacional de drama más antiguo de Rusia, fundado en el siglo XVIII y ubicado en un grandioso edificio neoclásico en la Plaza Ostrovski. Cuna del arte escénico ruso, sigue presentando producciones clásicas y contemporáneas en un entorno majestuoso.",
+    "address": "Plaza Ostrovski, 2"
+  },
+  "peter-cabin": {
+    "name": "Cabaña de Pedro el Grande",
+    "description": "La casa de madera más antigua conservada de la ciudad, construida para Pedro el Grande en 1703. Esta modesta cabaña de tres habitaciones refleja el espíritu pragmático del fundador y contrasta con la posterior grandeza imperial de San Petersburgo.",
+    "address": "Malecón Petrovskaya, 6"
+  },
+  "botanical-garden": {
+    "name": "Jardín Botánico de Pedro el Grande",
+    "description": "Uno de los jardines botánicos más antiguos de Rusia, famoso por sus vastos invernaderos con colecciones tropicales y subtropicales. Floraciones estacionales, parcelas temáticas e históricas casas de vidrio lo convierten en un refugio tranquilo para los amantes de las plantas durante todo el año.",
+    "address": "Calle del Profesor Popov, 2"
+  },
+  "faberge-museum": {
+    "name": "Museo Fabergé",
+    "description": "Museo privado en el Palacio Shuvalov que exhibe exquisitas joyas y artes decorativas, incluidos huevos imperiales de Fabergé. La colección destaca la artesanía rusa, los materiales nobles y el arte de la última época imperial.",
+    "address": "Malecón del río Fontanka, 21"
+  },
+  "yusupov-palace": {
+    "name": "Palacio Yusúpov",
+    "description": "Mansión aristocrática en el río Moika con lujosos interiores, teatro privado y exposiciones sobre sus propietarios. Conocida también por su vínculo con el asesinato de Grigori Rasputín.",
+    "address": "Malecón del río Moika, 94"
+  },
+  "menshikov-palace": {
+    "name": "Palacio Menshikov",
+    "description": "Residencia de principios del siglo XVIII del príncipe Aleksandr Menshikov en la Isla Vasílievski. Con salones barrocos e interiores de la era de Pedro, hoy es una sede del Hermitage dedicada al periodo petrino.",
+    "address": "Malecón Universitetskaya, 15"
+  },
+  "mint-yard": {
+    "name": "Casa de la Moneda de San Petersburgo",
+    "description": "Parte del histórico conjunto de la Fortaleza de Pedro y Pablo, simboliza la industria imperial y la acuñación de moneda. Aunque la producción está restringida, el sitio sigue siendo un hito notable de la infraestructura económica temprana de la ciudad.",
+    "address": "Fortaleza de Pedro y Pablo"
+  },
+  "st-petersburg-mosque": {
+    "name": "Gran Mezquita de San Petersburgo",
+    "description": "Monumental mezquita de inicios del siglo XX coronada por cúpulas turquesa y delicado ornamento geométrico. Sus mosaicos de fachada y su espaciosa sala de oración la convierten en un referente islámico de la arquitectura de la ciudad.",
+    "address": "Prospekt Kronvérkski, 7"
+  },
+  "tsarskoye-lyceum": {
+    "name": "Liceo de Tsárskoye Seló",
+    "description": "Famosa institución educativa vinculada a Aleksandr Pushkin, situada junto al Palacio de Catalina en Pushkin. Aulas de época y exposiciones ilustran el papel del Liceo en la formación de la literatura y la vida pública rusas.",
+    "address": "Calle Sadóvaya, 2, Pushkin"
+  },
+  "shuvalov-palace": {
+    "name": "Palacio Shuvalov",
+    "description": "Elegante palacio del siglo XIX a orillas del río Fontanka, restaurado para mostrar interiores históricos y exposiciones. Hoy alberga, sobre todo, la afamada colección del Museo Fabergé en un refinado entorno ribereño.",
+    "address": "Malecón del río Fontanka, 21"
+  },
+  "catherine-park": {
+    "name": "Parque de Catalina",
+    "description": "Conjunto paisajístico que rodea el Palacio de Catalina en Pushkin, combinando el formal Jardín Viejo y el pintoresco Parque Inglés. Pabellones como la Gruta y el Hermitage, alamedas, puentes y el Gran Estanque conforman un clásico retiro imperial a lo largo de siglos de arte jardinero.",
+    "address": "Calle Sadóvaya, 7, Pushkin"
+  },
+  "gulf-of-finland": {
+    "name": "Golfo de Finlandia",
+    "description": "Litoral báltico al oeste de San Petersburgo, conocido por sus paseos ventosos, playas de arena y puestas de sol amplias. Fuertes costeros, marinas modernas y miradores en Sestroretsk, Zelenogorsk y Kronstadt revelan la faceta marítima de la ciudad más allá del centro histórico.",
+    "address": "Costa del mar Báltico, San Petersburgo"
+  },
+  "gatchina-palace": {
+    "name": "Palacio de Gátchina",
+    "description": "Gran residencia campestre al sur de San Petersburgo con siluetas de fortaleza, salas ceremoniales y parques escénicos. Asociado al emperador Pablo I, el palacio combina paisajes románticos, pasajes subterráneos y lagos en un singular conjunto imperial.",
+    "address": "Prospekt Krasnoarmeiski, 1, Gátchina"
+  },
+  "kronstadt-forts": {
+    "name": "Fortalezas de Kronstadt",
+    "description": "Anillo de fuertes marítimos de los siglos XVIII–XX que guardaban los accesos a San Petersburgo en el Golfo de Finlandia. Casamatas de ladrillo, baterías e islas artificiales —como el Fuerte Alejandro I— muestran la ingeniería naval y la historia estratificada de la defensa costera.",
+    "address": "Kronstadt, isla Kotlin"
+  },
+  "lake-ladoga": {
+    "name": "Lago Ládoga",
+    "description": "El lago de agua dulce más grande de Europa, al noreste de San Petersburgo, rodeado de bosques de pinos, escollos graníticos e islas históricas. Conocido por la “Carretera de la Vida” durante la Segunda Guerra Mundial, el Ládoga combina naturaleza norteña agreste con tranquilas playas en el sur y dramáticas costas rocosas y archipiélagos en el norte.",
+    "address": "Óblast de Leningrado y República de Carelia"
+  }
+}

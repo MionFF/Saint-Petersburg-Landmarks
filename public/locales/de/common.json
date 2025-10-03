@@ -1,0 +1,34 @@
+{
+  "ui": {
+    "home": "Startseite",
+    "places": "Orte",
+    "back": "Zurück",
+    "description": "Beschreibung",
+    "address": "Adresse",
+    "category": "Kategorie",
+    "website": "Offizielle Website",
+    "notFound": "Nicht gefunden",
+    "placeRemoved": "Der Ort existiert nicht oder wurde entfernt."
+  },
+  "category": {
+    "theatre": "Theater",
+    "museum": "Museum",
+    "cathedral": "Kathedrale",
+    "park": "Park",
+    "monument": "Denkmal",
+    "palace": "Palast",
+    "street": "Straße",
+    "fortress": "Festung",
+    "square": "Platz",
+    "ensemble": "Ensemble",
+    "skyscraper": "Wolkenkratzer",
+    "nature": "Natur",
+    "mosque": "Moschee"
+  },
+  "heros": {
+    "title": "Die besten Orte in Sankt Petersburg",
+    "description": "Museen, Kathedralen, Parks, Geschichte und Architektur – alles an einem Ort",
+    "subTitle": "Sankt Petersburg, in deinem Tempo",
+    "subDescription": "Ikonische Sehenswürdigkeiten, versteckte Ecken und alles dazwischen."
+  }
+}

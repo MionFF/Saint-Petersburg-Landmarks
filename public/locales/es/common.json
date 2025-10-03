@@ -1,0 +1,34 @@
+{
+  "ui": {
+    "home": "Inicio",
+    "places": "Lugares",
+    "back": "Atrás",
+    "description": "Descripción",
+    "address": "Dirección",
+    "category": "Categoría",
+    "website": "Sitio oficial",
+    "notFound": "No encontrado",
+    "placeRemoved": "El lugar no existe o fue eliminado."
+  },
+  "category": {
+    "theatre": "Teatro",
+    "museum": "Museo",
+    "cathedral": "Catedral",
+    "park": "Parque",
+    "monument": "Monumento",
+    "palace": "Palacio",
+    "street": "Calle",
+    "fortress": "Fortaleza",
+    "square": "Plaza",
+    "ensemble": "Conjunto",
+    "skyscraper": "Rascacielos",
+    "nature": "Naturaleza",
+    "mosque": "Mezquita"
+  },
+  "heros": {
+    "title": "Los mejores lugares de San Petersburgo",
+    "description": "Museos, catedrales, parques, historia y arquitectura: todo en un solo lugar",
+    "subTitle": "San Petersburgo, a tu ritmo",
+    "subDescription": "Iconos imprescindibles, rincones ocultos y todo lo que hay entre ellos."
+  }
+}
