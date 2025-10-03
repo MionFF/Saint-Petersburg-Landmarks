@@ -8,6 +8,7 @@
 @use 'features/places/ScrollTopButton/ScrollTopButton' as *;
 @use 'features/places/components/SideAnchors/SideAnchors' as *;
 @use 'features/places/components/AnchorsDrawer/AnchorsDrawer' as *;
+@use 'features/places/components/LanguageMenu/LanguageMenu' as *;
 
 :root {
   --container-width: 1200px;

@@ -1,5 +1,7 @@
 {
   "ui": {
+    "home": "Home",
+    "places": "Places",
     "back": "Back",
     "description": "Description",
     "address": "Address",

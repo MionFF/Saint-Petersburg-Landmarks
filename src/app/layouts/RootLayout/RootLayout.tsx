@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo } from 'react'
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router'
 import '../../../styles.scss'
 import Header from '../../../widgets/Header/Header'
@@ -9,6 +9,7 @@ import SideAnchors from '../../../features/places/components/SideAnchors/SideAnc
 import { getPlaces } from '../../../features/places/helpers'
 import { useActiveSlug } from '../../../features/places/hooks/useActiveSlug'
 import { useScrollToTop } from '../../../features/places/hooks/useScrollToTop'
+import LanguageMenu from '../../../features/places/components/LanguageMenu/LanguageMenu'
 import { useTranslation } from 'react-i18next'
 
 export default function RootLayout() {
@@ -40,20 +41,16 @@ export default function RootLayout() {
     setOpen(true)
   }
 
-  const { i18n } = useTranslation()
-  const current = i18n.language
-  const nextLang = current === 'ru' ? 'en' : 'ru'
-
-  const changeLanguage = useCallback(() => {
-    i18n.changeLanguage(nextLang)
-  }, [i18n, nextLang])
+  const { t } = useTranslation('common')
+  const homeUI = t('ui.home')
+  const placesUI = t('ui.places')
 
   return (
     <>
       <Header showBrowse={isPlaces} onBrowse={handleBrowse}>
-        <button onClick={changeLanguage}>{nextLang.toUpperCase()}</button>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/places'>Places</NavLink>
+        <LanguageMenu />
+        <NavLink to='/'>{homeUI}</NavLink>
+        <NavLink to='/places'>{placesUI}</NavLink>
       </Header>
 
       <main className='container'>

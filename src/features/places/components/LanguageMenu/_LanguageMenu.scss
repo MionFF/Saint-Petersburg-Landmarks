@@ -1,0 +1,90 @@
+.lang-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-menu__btn {
+  inline-size: 40px;
+  block-size: 40px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid #e2e5ea;
+  background: #fff;
+  color: #1f2937;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+
+  &:hover {
+    background: #f8fafc;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+}
+
+.lang-menu__icon {
+  inline-size: 20px; /* целевой размер */
+  block-size: 20px;
+}
+
+.lang-menu__popover {
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  min-inline-size: 160px;
+  background: #fff;
+  border: 1px solid #e2e5ea;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  padding: 6px;
+  z-index: 20;
+}
+
+.lang-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 4px;
+}
+
+.lang-menu__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 8px;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  color: #1f2937;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background: #f1f5f9;
+    outline: none;
+  }
+}
+
+.lang-menu__item.is-active {
+  background: #eef2ff;
+  color: #3730a3;
+}
+.lang-menu__flag {
+  display: inline-block;
+  inline-size: 16px; /* ширина */
+  block-size: 12px; /* высота (соотношение 4:3) */
+  line-height: 12px;
+  border-radius: 2px; /* по желанию: лёгкое скругление */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05); /* тонкая обводка для светлых флагов */
+}
+.lang-menu__label {
+  font-size: 14px;
+}

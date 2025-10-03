@@ -99,12 +99,18 @@
   padding: 8px 12px;
   cursor: pointer;
   transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+
+  &:hover {
+    background: #f7f7f7;
+  }
 }
-.btn:hover {
-  background: #f7f7f7;
-}
+
 .btn--link {
   text-decoration: none;
+}
+
+#pd-website {
+  margin-bottom: 10px;
 }
 
 /* Мобильный режим: подгоняем контейнер под изображение, без внутренних полей */
