@@ -38,8 +38,7 @@ export default function PlaceCardWide({ place }: Props) {
 
         {canLink && (
           <LinkToDetails slug={place.slug} style={{ width: 'fit-content' }}>
-            {/* Можно локализовать подпись кнопки */}
-            {t('common:ui.description')}
+            {t('ui.description')}
           </LinkToDetails>
         )}
       </div>

@@ -9,6 +9,8 @@
 @use 'features/places/components/SideAnchors/SideAnchors' as *;
 @use 'features/places/components/AnchorsDrawer/AnchorsDrawer' as *;
 @use 'features/places/components/LanguageMenu/LanguageMenu' as *;
+@use 'features/places/components/Brand/Brand' as *;
+@use 'features/places/components/LinkToDetails/LinkToDetails' as *;
 
 :root {
   --container-width: 1200px;

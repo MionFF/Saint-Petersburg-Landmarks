@@ -58,6 +58,23 @@ $wide-desc-lines: 6;
     gap: 12px;
     align-items: center;
 
+    a {
+      text-decoration: none;
+      color: #554fff;
+      transition: color 0.15s ease, text-decoration-color 0.15s ease, outline-color 0.15s ease;
+
+      &:hover {
+        text-decoration: underline;
+        color: #645eff;
+      }
+
+      &:focus-visible {
+        outline: 2px solid #2563eb;
+        outline-offset: 2px;
+        text-decoration: none; /* чтобы не шумело вместе с outline */
+      }
+    }
+
     .btn-more {
       @include btn-reset();
     }

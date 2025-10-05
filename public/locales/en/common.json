@@ -8,7 +8,9 @@
     "category": "Category",
     "website": "Official site",
     "notFound": "Not found",
-    "placeRemoved": "The place does not exist or was removed."
+    "placeRemoved": "The place does not exist or was removed.",
+    "browse": "Browse",
+    "open": "Open"
   },
   "category": {
     "theatre": "Theatre",

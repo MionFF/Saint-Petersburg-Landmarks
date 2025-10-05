@@ -102,12 +102,13 @@ export default function PlaceDetailsPage() {
                   </h3>
                   <p className='pd__desc'>
                     <a
-                      className='btn btn--link'
+                      className='btn btn-link'
                       href={place.websiteUrl}
                       target='_blank'
                       rel='noopener noreferrer'
+                      aria-label={`${t('common:ui.website')}`}
                     >
-                      {t('common:ui.website')}
+                      {t('common:ui.open')} ↗
                     </a>
                   </p>
                 </section>

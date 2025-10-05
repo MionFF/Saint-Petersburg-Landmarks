@@ -39,12 +39,39 @@
   right: 0;
   margin-top: 8px;
   min-inline-size: 160px;
+  max-inline-size: calc(100vw - 16px); /* не выходить за экран */
   background: #fff;
   border: 1px solid #e2e5ea;
   border-radius: 10px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
   padding: 6px;
   z-index: 20;
+}
+
+/* Узкие экраны: выравнивание под кнопкой, без обрезки слева */
+@media (max-width: 400px) {
+  .lang-menu {
+    /* гарантируем, что поповер можно «поджать» внутри контейнера */
+    max-inline-size: 100%;
+  }
+
+  .lang-menu__popover {
+    /* Вместо right:0 используем left:0 и небольшой сдвиг вправо */
+    inset-inline-start: 0; /* аналог left: 0 в логических терминах */
+    inset-inline-end: auto; /* убираем right */
+    transform: translateX(8px); /* чуть сместить вправо от кнопки */
+    min-inline-size: 160px;
+    max-inline-size: calc(100vw - 24px); /* оставить поля экрана */
+  }
+}
+
+/* На совсем маленьких — пусть растягивается по экрану, но с отступами */
+@media (max-width: 340px) {
+  .lang-menu__popover {
+    inset-inline: 8px 8px; /* слева/справа по 8px в логических свойствах */
+    transform: none;
+    min-inline-size: auto;
+  }
 }
 
 .lang-menu__list {

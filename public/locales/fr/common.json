@@ -3,12 +3,14 @@
     "home": "Accueil",
     "places": "Lieux",
     "back": "Retour",
-    "description": "Description",
+    "description": "Détails",
     "address": "Adresse",
     "category": "Catégorie",
     "website": "Site officiel",
     "notFound": "Introuvable",
-    "placeRemoved": "Le lieu n’existe pas ou a été supprimé."
+    "placeRemoved": "Le lieu n’existe pas ou a été supprimé.",
+    "browse": "Parcourir",
+    "open": "Ouvrir"
   },
   "category": {
     "theatre": "Théâtre",
