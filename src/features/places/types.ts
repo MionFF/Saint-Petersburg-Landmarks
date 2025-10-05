@@ -18,6 +18,7 @@ export type Place = {
   name?: string
   description?: string
   address?: string
+  schedule?: string
   imageUrl?: string
   websiteUrl?: string
 }

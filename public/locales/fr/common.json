@@ -6,6 +6,7 @@
     "description": "Détails",
     "address": "Adresse",
     "category": "Catégorie",
+    "schedule": "Calendrier",
     "website": "Site officiel",
     "notFound": "Introuvable",
     "placeRemoved": "Le lieu n’existe pas ou a été supprimé.",

@@ -6,6 +6,7 @@
     "description": "Description",
     "address": "Address",
     "category": "Category",
+    "schedule": "Schedule",
     "website": "Official site",
     "notFound": "Not found",
     "placeRemoved": "The place does not exist or was removed.",
