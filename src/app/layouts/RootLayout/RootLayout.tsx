@@ -58,7 +58,7 @@ export default function RootLayout() {
         <Outlet />
       </main>
 
-      <Footer>&copy; Saint-Petersburg</Footer>
+      <Footer>Saint-Petersburg</Footer>
       <ScrollTopButton threshold={300} />
 
       <AnchorsDrawer open={open} onClose={() => setOpen(false)} side='bottom' title={browseUI}>
