@@ -1,5 +1,7 @@
 import type React from 'react'
 
 export default function Footer({ children }: { children?: React.ReactNode }) {
-  return <footer className='footer'>{children}</footer>
+  const year = new Date().getFullYear()
+
+  return <footer className='footer'>&copy; {year + ' ' + children}</footer>
 }

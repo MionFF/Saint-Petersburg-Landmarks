@@ -6,6 +6,7 @@
     "category": "museum",
     "description": "One of the world's largest and oldest museums, housed in the former Winter Palace. The Hermitage showcases an immense collection of art and cultural artifacts spanning millennia, from ancient civilizations to European masters. Its opulent interiors, vast galleries, and iconic pale-green facade make it a must‑see for first‑time visitors and seasoned art lovers alike.",
     "address": "Palace Square, 2",
+    "schedule": "Monday: closed; Tuesday: 11:00–20:00; Wednesday–Thursday: 11:00–18:00; Friday–Saturday: 11:00–20:00; Sunday: 11:00–18:00.",
     "imageUrl": "/images/hermitage.webp",
     "websiteUrl": "https://www.hermitagemuseum.org/"
   },
@@ -16,6 +17,7 @@
     "category": "cathedral",
     "description": "A striking example of Russian Revival architecture, built on the site where Emperor Alexander II was fatally wounded. The church is famous for its vibrant onion domes and one of the world’s largest collections of mosaics, covering interior walls with shimmering biblical scenes and ornate patterns.",
     "address": "Griboyedov Canal Emb., 2B",
+    "schedule": "Daily except Wednesday, 10:30–18:00.",
     "imageUrl": "/images/church-of-the-savior-on-spilled-blood.webp",
     "websiteUrl": "https://spas.spb.ru/"
   },
@@ -36,6 +38,7 @@
     "category": "monument",
     "description": "A legendary Russian warship and symbol of the 1917 Revolution. Moored on the Neva, the preserved cruiser now serves as a museum ship, offering visitors a look into naval history, life on board, and the events that shaped the country’s early 20th‑century destiny.",
     "address": "Petrovskaya Emb., 2",
+    "schedule": "Wednesday-Sunday, from 11:00 to 18:00; Monday-Tuesday - closed",
     "imageUrl": "/images/cruiser-aurora.webp",
     "websiteUrl": ""
   },
@@ -46,6 +49,7 @@
     "category": "fortress",
     "description": "The birthplace of St. Petersburg, founded by Peter the Great in 1703. Within its walls stand the Peter and Paul Cathedral—burial site of Russian emperors—bastions, museums, and scenic river views. The fortress offers a deep dive into the city’s founding and imperial history.",
     "address": "Zayachy Island",
+    "schedule": "Daily from 9:30 to 21:00",
     "imageUrl": "/images/peter-and-paul-fortress.webp",
     "websiteUrl": ""
   },
@@ -56,6 +60,7 @@
     "category": "cathedral",
     "description": "One of the largest domed cathedrals in the world, famed for its gilded dome and grand neoclassical design. The interior features columns of malachite and lapis lazuli, intricate mosaics, and a panoramic colonnade offering sweeping views across St. Petersburg’s historic center.",
     "address": "St Isaac's Square, 4",
+    "schedule": "10:30–18:00; closed on Wednesday; evening programs (May 1–Sep 30): 18:00–22:30; Colonnade: May 1–Oct 31 — 10:30–18:00 daily; Nov 1–Apr 30 — closed on the third Wednesday; Evening colonnade (Apr 27–Sep 30): 18:00–22:30.",
     "imageUrl": "/images/saint-isaacs-cathedral.webp",
     "websiteUrl": ""
   },
@@ -66,6 +71,7 @@
     "category": "museum",
     "description": "Russia's first museum, founded by Peter the Great, renowned for its collections in anthropology and natural history. The iconic turquoise-and-white building on the Neva is as memorable as the exhibits inside, bridging scientific curiosity and cultural heritage.",
     "address": "Universitetskaya Emb., 3",
+    "schedule": "Tuesday through Sunday, 11:00 AM to 6:00 PM. Ticket offices are open until 5:00 PM. The last Tuesday of the month is a cleaning day.",
     "imageUrl": "/images/kunstkamera.webp",
     "websiteUrl": ""
   },
@@ -76,6 +82,7 @@
     "category": "palace",
     "description": "The 'Russian Versailles': a grand palace-and-park ensemble famed for its cascades, golden fountains, and views across the Gulf of Finland. The Lower Park’s waterworks and the opulent interiors of the Grand Palace showcase imperial luxury at its peak.",
     "address": "Razvodnaya St., 2, Peterhof",
+    "schedule": "Lower Park (Apr 26–Oct 12): daily 09:00–20:00; Grand Peterhof Palace: open daily except Monday and the last Tuesday of the month (entry for individual visitors is by timed sessions).",
     "imageUrl": "/images/peterhof.webp",
     "websiteUrl": ""
   },
@@ -86,6 +93,7 @@
     "category": "park",
     "description": "A tranquil green space beside the Admiralty, popular for leisurely strolls and photo stops. Lawns, sculptures, and tree‑lined paths offer respite from the bustling center, with quick access to nearby landmarks like Palace Square and Nevsky Prospect.",
     "address": "Admiralteysky District",
+    "schedule": "Daily: 7:00 - 23:00",
     "imageUrl": "/images/alexander-garden.webp",
     "websiteUrl": ""
   },
@@ -116,6 +124,7 @@
     "category": "park",
     "description": "An elegant historic garden with marble statues, fountains, and carefully manicured alleys. Once a favored retreat of Peter the Great, today it offers a peaceful setting amid baroque aesthetics and seasonal greenery.",
     "address": "Kutuzova Emb., 2",
+    "schedule": "From May 1 to September 30, 10:00–22:00; from October 1 to March 31, 10:00–20:00; from April 1 to April 30, closed; Tuesdays are a day off.",
     "imageUrl": "/images/summer-garden.webp",
     "websiteUrl": ""
   },
@@ -126,6 +135,7 @@
     "category": "cathedral",
     "description": "A stunning blue‑and‑white baroque cathedral designed by Rastrelli, part of the larger Smolny Convent ensemble. Its elegant facades and serene setting create a distinctive landmark away from the busiest tourist routes.",
     "address": "Rastrelli Square, 1",
+    "schedule": "Monday-Saturday, 8:00 AM to 8:00 PM; Sunday, 7:00 AM to 8:00 PM",
     "imageUrl": "/images/smolny-cathedral.webp",
     "websiteUrl": ""
   },
@@ -136,6 +146,7 @@
     "category": "monument",
     "description": "An Art Nouveau masterpiece on Nevsky Prospect, originally built for the Singer Sewing Machine Company. The building’s glass tower and ornate details stand out, while the ground floor hosts a famous bookstore and cafe.",
     "address": "Nevsky Prospekt, 28",
+    "schedule": "Tuesday-Friday, 11:00 AM to 6:00 PM; Saturday-Sunday, 12:00 PM to 7:00 PM; Monday - closed",
     "imageUrl": "/images/singer-house.webp",
     "websiteUrl": ""
   },
@@ -146,6 +157,7 @@
     "category": "cathedral",
     "description": "A monumental neoclassical cathedral with a sweeping colonnade inspired by St. Peter’s Basilica. Dedicated to Our Lady of Kazan, it serves as an active place of worship and a prominent architectural focal point on Nevsky Prospect.",
     "address": "Nevsky Prospect, 25",
+    "schedule": "Daily from 6:30 to 20:00",
     "imageUrl": "/images/kazan-cathedral.webp",
     "websiteUrl": ""
   },
@@ -186,6 +198,7 @@
     "category": "museum",
     "description": "A premier collection dedicated to Russian art, from ancient icons to avant‑garde and 20th‑century works. Housed in the Mikhailovsky Palace, the museum provides a comprehensive journey through national artistic heritage.",
     "address": "Inzhenernaya St., 4",
+    "schedule": "Thursday 13:00-21:00; Tuesday closed; other days 10:00-18:00",
     "imageUrl": "/images/russian-museum.webp",
     "websiteUrl": ""
   },
@@ -196,6 +209,7 @@
     "category": "palace",
     "description": "A unique residence of Emperor Paul I with an unusual mix of architectural styles. Surrounded by moats and gardens, the castle carries a dramatic history and now functions as a branch of the Russian Museum.",
     "address": "Sadovaya St., 2",
+    "schedule": "From 10:00 to 18:00, Tuesday – day off.",
     "imageUrl": "/images/st-michael-castle.webp",
     "websiteUrl": ""
   },
@@ -206,6 +220,7 @@
     "category": "palace",
     "description": "A lavish Baroque residence in Tsarskoe Selo, famed for its gilded facades, the opulent Great Hall, and the legendary Amber Room. Built on an imperial scale by Rastrelli and later refined under Catherine the Great, the palace anchors vast landscaped parks and showcases three centuries of Romanov history.",
     "address": "7 Sadovaya St., Pushkin",
+    "schedule": "Wed–Mon: 10:00–18:00 (last entry ~16:45–17:00); Tuesday: closed; additional closures may apply on the last Monday and on public holidays (check current notices).",
     "imageUrl": "/images/catherine-palace.webp",
     "websiteUrl": "https://tzar.ru/en/objects/ekaterininsky"
   },
@@ -226,6 +241,7 @@
     "category": "theatre",
     "description": "St. Petersburg’s storied opera and ballet stage since 1860, where masterpieces by Tchaikovsky, Mussorgsky, and Rimsky‑Korsakov premiered. The historic auditorium, the modern Mariinsky‑II, and the Concert Hall together host world‑class productions under the Mariinsky’s renowned ensembles.",
     "address": "1 Theatre Square",
+    "schedule": "Box offices: daily 11:00–19:00 (breaks vary by venue); performances follow the published repertoire schedule.",
     "imageUrl": "/images/mariinsky-theatre.webp",
     "websiteUrl": "https://www.mariinsky.ru/en/"
   },
@@ -236,6 +252,7 @@
     "category": "park",
     "description": "An 18th‑century triangular artificial island transformed into a cultural park with events, dining, and family spaces. Brick arches, canals, and lawns set a distinctive urban vibe steps from St. Isaac’s Cathedral and the Moika embankments.",
     "address": "Admiralteysky Canal Emb., 2",
+    "schedule": "Monday-Thursday, from 09:00 to 22:00; Friday-Sunday: from 09:00 to 23:00",
     "imageUrl": "/images/new-holland-island.webp",
     "websiteUrl": "https://www.newhollandsp.ru/en/"
   },
@@ -246,6 +263,7 @@
     "category": "monument",
     "description": "A legendary Art Nouveau gourmet emporium and landmark on Nevsky Prospect. Its theatrical window displays, stained glass, and ornate interiors frame a storied food hall celebrated for pastries, chocolates, and culinary souvenirs.",
     "address": "Nevsky Prospect, 56",
+    "schedule": "Daily: 10:00 - 23:00",
     "imageUrl": "/images/eliseyev-emporium.webp",
     "websiteUrl": ""
   },
@@ -266,6 +284,7 @@
     "category": "museum",
     "description": "The city’s oldest surviving wooden house, built for Peter the Great in 1703. This modest three‑room cabin reveals the pragmatic spirit of the founder and contrasts with the later imperial grandeur of St. Petersburg.",
     "address": "Petrovskaya Emb., 6",
+    "schedule": "Monday, 10:00 AM to 6:00 PM; Wednesday, 10:00 AM to 6:00 PM; Thursday, 1:00 PM to 9:00 PM; Friday-Sunday, 10:00 AM to 6:00 PM; Tuesday - Closed",
     "imageUrl": "/images/peter-cabin.webp",
     "websiteUrl": ""
   },
@@ -276,6 +295,7 @@
     "category": "park",
     "description": "One of Russia’s oldest botanical gardens, famed for vast greenhouses with tropical and subtropical collections. Seasonal blooms, themed plots, and historic glasshouses make it a tranquil retreat for plant lovers year‑round.",
     "address": "Professora Popova St., 2",
+    "schedule": "Tuesday–Sunday 10:00–16:30 entry, exit until 17:30, Monday — closed",
     "imageUrl": "/images/botanical-garden.webp",
     "websiteUrl": ""
   },
@@ -286,6 +306,7 @@
     "category": "museum",
     "description": "A private museum in the Shuvalov Palace showcasing exquisite jewelry and decorative arts, including imperial Fabergé eggs. The collection highlights Russian craftsmanship, luxury materials, and the artistry of the late imperial era.",
     "address": "Fontanka River Emb., 21",
+    "schedule": "Daily: exhibitions 10:00–20:45; ticket office 09:30–20:15.",
     "imageUrl": "/images/faberge-museum.webp",
     "websiteUrl": ""
   },
@@ -296,6 +317,7 @@
     "category": "palace",
     "description": "An aristocratic mansion on the Moika with lavish interiors, a private theatre, and exhibits about the palace’s owners. It is also known for the historical account of Grigori Rasputin’s assassination connected to the site.",
     "address": "Moika River Emb., 94",
+    "schedule": "Daily: 10:00 - 19:30",
     "imageUrl": "/images/yusupov-palace.webp",
     "websiteUrl": ""
   },
@@ -306,6 +328,7 @@
     "category": "palace",
     "description": "The early 18th‑century residence of Prince Alexander Menshikov on Vasilievsky Island. With Baroque halls and period decor, today it serves as a branch of the Hermitage focused on Petrine‑era art and interiors.",
     "address": "Universitetskaya Emb., 15",
+    "schedule": "Tuesday-Sunday, 11:00 AM to 6:00 PM; Monday - closed",
     "imageUrl": "/images/menshikov-palace.webp",
     "websiteUrl": ""
   },
@@ -316,6 +339,7 @@
     "category": "monument",
     "description": "Part of the historic Peter and Paul Fortress complex, the Mint symbolizes imperial industry and coinage. Though production is restricted, the site remains a notable landmark of the city’s early economic infrastructure.",
     "address": "Peter and Paul Fortress",
+    "schedule": "Every day without breaks from 08:00 to 19:30, shop from 10:00 to 18:00",
     "imageUrl": "/images/mint-yard.webp",
     "websiteUrl": ""
   },
@@ -326,6 +350,7 @@
     "category": "mosque",
     "description": "A monumental early 20th‑century mosque crowned with turquoise domes and intricate geometric ornament. Its facade mosaics and lofty prayer hall mark a major Islamic landmark in the city’s architectural mosaic.",
     "address": "Kronverkskiy Prospekt, 7",
+    "schedule": "Daily: 10:00 - 17:00",
     "imageUrl": "/images/st-petersburg-mosque.webp",
     "websiteUrl": ""
   },
@@ -336,6 +361,7 @@
     "category": "museum",
     "description": "The famed educational institution associated with Alexander Pushkin, located by the Catherine Palace in Pushkin. Period classrooms and exhibits illuminate the Lyceum’s role in shaping Russian literature and public life.",
     "address": "Sadovaya St., 2, Pushkin",
+    "schedule": "Wednesday-Monday, 10:30 to 18:00; Tuesday - closed",
     "imageUrl": "/images/tsarskoye-lyceum.webp",
     "websiteUrl": ""
   },
@@ -346,6 +372,7 @@
     "category": "palace",
     "description": "An elegant 19th‑century palace on the Fontanka, restored to showcase historic interiors and exhibitions. Today it most notably houses the Fabergé Museum’s celebrated collection in a refined riverside setting.",
     "address": "Fontanka River Emb., 21",
+    "schedule": "Every day from 10:00 to 20:45, the first Wednesday of each month is a day off",
     "imageUrl": "/images/shuvalov-palace.webp",
     "websiteUrl": ""
   },
@@ -356,6 +383,7 @@
     "category": "park",
     "description": "The landscaped ensemble surrounding the Catherine Palace in Pushkin, combining a formal Old Garden and the picturesque English Park. Pavilions like the Grotto and Hermitage, alleys, bridges, and the Great Pond create a classic imperial retreat spanning centuries of garden art.",
     "address": "7 Sadovaya St., Pushkin",
+    "schedule": "From 7:00 to 21:00",
     "imageUrl": "/images/catherine-park.webp",
     "websiteUrl": "https://tzar.ru/objects/ekaterininskypark"
   },
@@ -376,6 +404,7 @@
     "category": "palace",
     "description": "A grand country residence south of St. Petersburg with fortress‑like silhouettes, ceremonial halls, and scenic parks. Associated with Emperor Paul I, the palace blends romantic landscapes, underground passages, and lakes into a distinctive imperial ensemble.",
     "address": "1 Krasnoarmeysky Pr., Gatchina",
+    "schedule": "Tuesday - Sunday, 10:00 to 17:00; Monday - Closed",
     "imageUrl": "/images/gatchina-palace.webp",
     "websiteUrl": ""
   },

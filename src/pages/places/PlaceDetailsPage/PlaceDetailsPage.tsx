@@ -46,6 +46,9 @@ export default function PlaceDetailsPage() {
   const description = t(`places:${place.slug}.description`)
   const address = t(`places:${place.slug}.address`)
   const categoryLabel = place.category ? t(`common:category.${place.category}`) : ''
+  const schedule = place.slug
+    ? t(`schedule.${place.slug}`, { ns: 'places', defaultValue: place.schedule ?? '' })
+    : place.schedule ?? ''
 
   return (
     <section className='container' style={{ padding: '24px 0' }}>
@@ -95,6 +98,14 @@ export default function PlaceDetailsPage() {
                   <p className='pd__desc'>{categoryLabel}</p>
                 </section>
               )}
+              {place.schedule && (
+                <section className='pd__section' aria-labelledby='pd-schedule'>
+                  <h3 id='pd-schedule' className='pd__section-title'>
+                    {t('common:ui.schedule')}
+                  </h3>
+                  <p className='pd__desc'>{schedule}</p>
+                </section>
+              )}
               {place.websiteUrl && (
                 <section className='pd__section' aria-labelledby='pd-website'>
                   <h3 id='pd-website' className='pd__section-title'>
@@ -102,12 +113,13 @@ export default function PlaceDetailsPage() {
                   </h3>
                   <p className='pd__desc'>
                     <a
-                      className='btn btn--link'
+                      className='btn btn-link'
                       href={place.websiteUrl}
                       target='_blank'
                       rel='noopener noreferrer'
+                      aria-label={`${t('common:ui.website')}`}
                     >
-                      {t('common:ui.website')}
+                      {t('common:ui.open')} ↗
                     </a>
                   </p>
                 </section>

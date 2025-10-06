@@ -23,12 +23,72 @@
   gap: 12px;
 }
 
-.nav__brand a {
+.nav__brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-link {
+  position: relative;
   display: inline-block;
   font-weight: 700;
   letter-spacing: 0.2px;
   text-decoration: none;
   color: inherit;
+  line-height: 1;
+  width: fit-content;
+  padding: 2px 0;
+
+  // две линии под словом, как в оригинале, только вместо top:50% — подчеркивание
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 100%; // под текстом
+    transform: translateY(2px);
+    background: currentColor; // цвет как у текста
+  }
+
+  &::before {
+    left: -2.5px;
+  }
+  &::after {
+    right: 2.5px;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover::before {
+    background: currentColor;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover::after {
+    background: transparent; // «тает» справа
+    width: 100%;
+    transition: 0s; // мгновенно, без мерцаний
+  }
+
+  // доступность
+  &:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+}
+
+// адаптив названия как было
+.brand__name--narrow {
+  display: none;
+}
+@media (max-width: 370px) {
+  .brand__name--wide {
+    display: none;
+  }
+  .brand__name--narrow {
+    display: inline;
+  }
 }
 
 .nav__links {
@@ -37,14 +97,71 @@
   gap: 12px;
 }
 
+/* Базовая ссылка навигации */
 .nav__links a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 34px; /* удобная кликабельная зона */
+  padding: 0 10px; /* чуть шире по горизонтали */
+  border-radius: 8px; /* мягкий радиус */
   text-decoration: none;
-  color: inherit;
-  padding: 6px 8px;
-  border-radius: 6px;
-}
-.nav__links a.active {
-  background: #eee;
+  color: #1f2937; /* тёмно‑серый вместо чисто чёрного */
+  line-height: 1;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+
+  /* Hover — светлый фон и лёгкое затемнение текста */
+  &:hover {
+    background: #f3f4f6; /* нейтрально‑светлый */
+    color: #111827;
+  }
+
+  /* Focus‑visible — явная рамка для клавиатуры */
+  &:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+
+  /* Active/current — выделение, но без «тяжёлой» рамки */
+  &.active,
+  &[aria-current='page'] {
+    background: #e5e7eb; /* темнее hover */
+    color: #0f172a; /* насыщеннее текст */
+  }
+
+  /* Небольшая «подложка» при active + hover для читаемости */
+  &.active:hover,
+  &[aria-current='page']:hover {
+    background: #e2e8f0;
+  }
+
+  /* Вариант с тонкой псевдо‑подчёркивающей линией (по желанию) */
+  &::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 4px;
+    height: 2px;
+    background: transparent;
+    border-radius: 2px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+
+  /* Аккуратная «подчёркивающая» проявляется на hover */
+  &:hover::after {
+    background: rgba(0, 0, 0, 0.12);
+    transform: scaleX(1);
+  }
+
+  /* Для active — чуть заметнее линия */
+  &.active::after,
+  &[aria-current='page']::after {
+    background: rgba(0, 0, 0, 0.18);
+    transform: scaleX(1);
+  }
 }
 
 /* Кнопка Browse — по умолчанию скрыта (десктоп) */

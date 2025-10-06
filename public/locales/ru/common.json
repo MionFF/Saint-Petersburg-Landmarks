@@ -3,12 +3,15 @@
     "home": "Главная",
     "places": "Места",
     "back": "Назад",
-    "description": "Описание",
+    "description": "Подробнее",
     "address": "Адрес",
     "category": "Категория",
+    "schedule": "Расписание",
     "website": "Официальный сайт",
     "notFound": "Не найдено",
-    "placeRemoved": "Локация не существует или была удалена."
+    "placeRemoved": "Локация не существует или была удалена.",
+    "browse": "Каталог",
+    "open": "Перейти"
   },
   "category": {
     "theatre": "Театр",

@@ -1,4 +1,6 @@
 import type React from 'react'
+import { Brand } from '../../features/places/components/Brand/Brand'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   children?: React.ReactNode
@@ -7,27 +9,20 @@ type Props = {
 }
 
 export default function Header({ children, onBrowse, showBrowse }: Props) {
+  const { t } = useTranslation('common')
+  const browseUI = t('ui.browse')
+
   return (
     <header className='header'>
       <nav className='nav'>
         {/* Лого слева */}
-        <div className='nav__brand'>
-          <a href='/' aria-label='Home'>
-            SPB Guide
-          </a>
-        </div>
-
+        <Brand />
         {/* Навигация справа */}
         <div className='nav__links'>
           {children}
           {showBrowse && (
-            <button
-              type='button'
-              className='nav__browse'
-              aria-label='Browse places'
-              onClick={onBrowse}
-            >
-              Browse Places
+            <button type='button' className='nav__browse' aria-label={browseUI} onClick={onBrowse}>
+              {browseUI}
             </button>
           )}
         </div>

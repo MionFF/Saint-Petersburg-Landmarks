@@ -1,0 +1,56 @@
+.details-cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #0f172a; /* текст */
+  font-weight: 600;
+  line-height: 1;
+  min-block-size: 32px;
+  padding: 0 10px;
+  border-radius: 999px; /* капсула */
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.06s ease;
+
+  /* Иконка-стрелка через псевдоэлемент */
+  &::after {
+    content: '↗';
+    font-size: 14px;
+    line-height: 1;
+    transform: translateY(1px);
+    opacity: 0.85;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  &:hover {
+    background-color: #eef2f7; /* мягкая подложка */
+    color: #0b1224;
+
+    &::after {
+      transform: translate(1px, 1px);
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    background-color: #e7ecf4; /* активнее при нажатии */
+    transform: translateY(0.5px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+}
+
+/* Если нужен строго текстовый вариант без подложки */
+.details-cta--link {
+  padding: 0;
+  border-radius: 0;
+
+  &:hover {
+    background: transparent;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

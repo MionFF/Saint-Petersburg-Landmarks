@@ -1,5 +1,5 @@
 import type { Place } from '../../types'
-import './_SideAnchors.scss'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   items: Place[]
@@ -9,10 +9,13 @@ type Props = {
 }
 
 export default function SideAnchors({ items, onItemClick, className, activeSlug }: Props) {
+  const { t } = useTranslation('places')
+
   return (
     <aside className={`side-anchors ${className ?? ''}`}>
       {items.map(p => {
         const isActive = activeSlug === p.slug
+        const label = p.slug ? t(`places:${p.slug}.name`) : p.name // fallback
         return (
           <a
             key={p.id}
@@ -20,7 +23,7 @@ export default function SideAnchors({ items, onItemClick, className, activeSlug 
             onClick={onItemClick}
             className={isActive ? 'active' : undefined}
           >
-            {p.name}
+            {label}
           </a>
         )
       })}

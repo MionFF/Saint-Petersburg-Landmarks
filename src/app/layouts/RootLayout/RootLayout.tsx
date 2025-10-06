@@ -44,6 +44,7 @@ export default function RootLayout() {
   const { t } = useTranslation('common')
   const homeUI = t('ui.home')
   const placesUI = t('ui.places')
+  const browseUI = t('ui.browse')
 
   return (
     <>
@@ -57,10 +58,10 @@ export default function RootLayout() {
         <Outlet />
       </main>
 
-      <Footer>&copy; Saint-Petersburg</Footer>
+      <Footer>Saint-Petersburg</Footer>
       <ScrollTopButton threshold={300} />
 
-      <AnchorsDrawer open={open} onClose={() => setOpen(false)} side='bottom' title='Browse Places'>
+      <AnchorsDrawer open={open} onClose={() => setOpen(false)} side='bottom' title={browseUI}>
         <SideAnchors
           items={places}
           className='side-anchors--mobile'
